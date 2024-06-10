@@ -53,7 +53,7 @@ Route::post('enquiry', [EnquiryController::class, 'enquiry'])->name('enquiry');
 Route::post('save-enquiry', [EnquiryController::class, 'saveEnquiry'])->name('save-enquiry');
 
 //safari booking page
-Route::get('kaziranga-safari-booking', [KazirangaSafariController::class, 'index'])->name('kaziranga-safari');
+Route::get('safari', [KazirangaSafariController::class, 'index'])->name('safari');
 //submit safari page form
 Route::post('check-availibility', [BookingController::class, 'checkAvailibility'])->name('check-availibility');
 //show stored safari booking details on safari booking overview page
@@ -65,9 +65,9 @@ Route::get('payment-success', [BookingController::class, 'paymentSuccess'])->nam
 
 
 //show all hotels
-Route::get('Kaziranga-hotels-booking', [HotalResortController::class, 'index'])->name('kaziranga-hotels')->middleware('clear.optimize.cache');
+Route::get('hotel', [HotalResortController::class, 'index'])->name('hotel');
 //show particular hotel details
-Route::get('Kaziranga-hotels-booking/{slug}', [HotalResortController::class, 'hotelDetails'])->name('hotel-details');
+Route::get('hotel-detail', [HotalResortController::class, 'hotelDetails'])->name('hotel-details');
 //show hotel Booking Overview
 Route::get('/hotel-room-booking-payment/{roomid}/{hotelid}/{mealType}', [HotalResortController::class, 'hotelRoomBooking'])->name('hotel.room.booking.payment');
 //Save hotel Booking payment details
@@ -75,9 +75,9 @@ Route::post('kazi-hotel-booking-save-final', [HotalResortController::class, 'sav
 
 
 //show all packages
-Route::get('tour-packages', [PackageController::class, 'index'])->name('packages');
+Route::get('packages', [PackageController::class, 'index'])->name('packages');
 //get package details
-Route::get('tour-packages/{slug}', [PackageController::class, 'packageDetails'])->name('package-details');
+Route::get('tour-packages', [PackageController::class, 'packageDetails'])->name('package-details');
 //get hotels images package category
 Route::post('getHotelImages', [PackageController::class, 'getHotelImages'])->name('getHotelImages');
 //get indian and foreigner price for hotel category
@@ -96,11 +96,11 @@ Route::get('do-dont', [DoDontController::class, 'index'])->name('do_dont');
 Route::get('info', [InfoController::class, 'index'])->name('info');
 
 //Footer second columns pages
-Route::get('best-time-to-visit-kaziranga', [BesttimeController::class, 'index'])->name('besttime');
-Route::get('how-to-reach-kaziranga', [HowToReachController::class, 'index'])->name('how_to_reach');
+Route::get('best-time-to-visit-Jawai', [BesttimeController::class, 'index'])->name('besttime');
+Route::get('how-to-reach', [HowToReachController::class, 'index'])->name('how_to_reach');
 Route::get('terms', [TermAndConditionsController::class, 'index'])->name('terms');
 Route::get('privacy-policy', [PrivacyController::class, 'index'])->name('privacy-policy');
-Route::get('kaziranga-cancellation-policy', [CancellationController::class, 'index'])->name('cancellation-policy');
+Route::get('cancellation-policy', [CancellationController::class, 'index'])->name('cancellation-policy');
 Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('news', [NewsController::class, 'index'])->name('news');
 
@@ -114,4 +114,4 @@ Route::get('local-food', [LocalFoodController::class, 'index'])->name('localfood
 
 Route::get('pricing', [PricingController::class, 'index'])->name('pricingtable');
 
-
+// ======route/jawai-national-park=====

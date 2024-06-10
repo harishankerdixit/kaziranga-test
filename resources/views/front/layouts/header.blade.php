@@ -26,17 +26,17 @@
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li>
-                    <a class="nav-link scrollto active" href="index.html">Home</a>
+                    <a class="nav-link scrollto active" href="{{ route('/') }}">Home</a>
                 </li>
                 <li>
-                    <a class="nav-link scrollto" href="safari.html">Safari Booking</a>
+                    <a class="nav-link scrollto" href="{{ route('safari') }}">Safari Booking</a>
                 </li>
-                <li><a class="nav-link scrollto" href="hotels.html">Hotels</a></li>
+                <li><a class="nav-link scrollto" href="{{ route('hotel') }}">Hotels</a></li>
                 <li>
-                    <a class="nav-link scrollto" href="packages.html">Packages</a>
+                    <a class="nav-link scrollto" href="{{ route('packages') }}">Packages</a>
                 </li>
                 <li>
-                    <a class="nav-link scrollto" href="contact.html">Contact</a>
+                    <a class="nav-link scrollto" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>

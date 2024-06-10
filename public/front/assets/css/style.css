@@ -204,7 +204,7 @@ h6 {
 }
 
 .appointment-btn:hover {
-  background: #166ab5;
+  background: orange;
   color: #fff;
 }
 
@@ -466,8 +466,8 @@ h6 {
   width: 100%;
   height: 97vh;
   /* background: url("../img/AreaofJawai.png") top center; */
-  /* background: linear-gradient(#0000, #00000075 5%, #0000); */
-  background:linear-gradient(#0000, #00000075 55%, #0000);
+  background: linear-gradient(#0000, #00000075 5%, #0000);
+  /* background:linear-gradient(#0000, #00000075 55%, #0000); */
 
   background-size: cover;
   margin-bottom: -160px;
@@ -477,6 +477,8 @@ h6 {
   width: 100%;
   /* height: 95vh; */
   min-height: 650px;
+  /* background: linear-gradient(#0000, #00000075 55%, #0000); */
+
   background: url("../img/JawaiHero.jpg"), conic-gradient(at 100% 0, #2D1900 30%, #002D19 35%, #19002D) top center;
   background-size: cover;
   /* margin-bottom: -80px; */
@@ -2566,10 +2568,11 @@ section {
 .enquiry-form input[type="email"],
 .enquiry-form input[type="date"],
 .enquiry-form select,
+.enquiry-form input,
 .enquiry-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #e88207;
+  border: 1px solid #e88207 !important;
   margin-bottom: 10px;
   border-radius: 5px;
   font-size: 14px;
