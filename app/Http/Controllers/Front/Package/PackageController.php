@@ -32,11 +32,12 @@ class PackageController extends Controller
 {
     public function index(Request $request)
     {
-        $packages_meta   = PageManagement::Where('type', 'package')->first();
-        $packages = Package::with(['features', 'inclusions', 'exclusions', 'categories', 'available_categories', 'iternaries', 'bookingPackages'])
-            ->where('status', 1)
-            ->get();
-        return view('front.packages.packages', compact('packages', 'packages_meta'));
+        // $packages_meta   = PageManagement::Where('type', 'package')->first();
+        // $packages = Package::with(['features', 'inclusions', 'exclusions', 'categories', 'available_categories', 'iternaries', 'bookingPackages'])
+        //     ->where('status', 1)
+        //     ->get();
+        // return view('front.packages.packages', compact('packages', 'packages_meta'));
+        return view('front.packages.packages');
     }
 
     // public function packageDetailsOld($slug)
@@ -49,28 +50,29 @@ class PackageController extends Controller
     //     return view('front.packages.package_details', compact('package', 'states'));
     // }
 
-    public function packageDetails($slug)
+    public function packageDetails()
     {
-        $kazi_package            = Package::where('slug', $slug)->first();
-        $terms                  = PackageTerms::get();
-        $cancellation_policies  = PackageCancellationPolicy::get();
-        $payment_policies       = PackagePaymentPolicy::get();
-        $packageIternaries        = PackageItineraries::get();
+        // $kazi_package            = Package::where('slug', $slug)->first();
+        // $terms                  = PackageTerms::get();
+        // $cancellation_policies  = PackageCancellationPolicy::get();
+        // $payment_policies       = PackagePaymentPolicy::get();
+        // $packageIternaries        = PackageItineraries::get();
 
-        $package   = PageManagement::Where('type', 'package')->first();
+        // $package   = PageManagement::Where('type', 'package')->first();
 
-        $features_pluck  = PackageFeature::where('package_id', $kazi_package->id)->where('status', true)->pluck('feature_id');
-        $features = Feature::whereIn('id', $features_pluck)->get()->toArray();
+        // $features_pluck  = PackageFeature::where('package_id', $kazi_package->id)->where('status', true)->pluck('feature_id');
+        // $features = Feature::whereIn('id', $features_pluck)->get()->toArray();
 
-        $inclusion_pluck  = PackageInclusion::where('package_id', $kazi_package->id)->where('status', true)->pluck('inclusion_id');
-        $inclusions = Inclusion::whereIn('id', $inclusion_pluck)->get()->toArray();
+        // $inclusion_pluck  = PackageInclusion::where('package_id', $kazi_package->id)->where('status', true)->pluck('inclusion_id');
+        // $inclusions = Inclusion::whereIn('id', $inclusion_pluck)->get()->toArray();
 
-        $exclusion_pluck  = PackageExclusion::where('package_id', $kazi_package->id)->where('status', true)->pluck('exclusion_id');
-        $exclusions = Exclusion::whereIn('id', $exclusion_pluck)->get()->toArray();
+        // $exclusion_pluck  = PackageExclusion::where('package_id', $kazi_package->id)->where('status', true)->pluck('exclusion_id');
+        // $exclusions = Exclusion::whereIn('id', $exclusion_pluck)->get()->toArray();
 
-        $states = State::get()->toArray();
+        // $states = State::get()->toArray();
 
-        return view('front.packages.package_details', compact('kazi_package', 'package', 'terms', 'cancellation_policies', 'payment_policies', 'packageIternaries', 'features', 'inclusions', 'exclusions', 'states'));
+        // return view('front.packages.package_details', compact('kazi_package', 'package', 'terms', 'cancellation_policies', 'payment_policies', 'packageIternaries', 'features', 'inclusions', 'exclusions', 'states'));
+        return view('front.packages.package_details');
     }
 
     public function getHotelImages(Request $request)

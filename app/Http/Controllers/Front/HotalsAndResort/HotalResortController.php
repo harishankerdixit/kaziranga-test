@@ -21,6 +21,8 @@ use Illuminate\Support\Facades\Session;
 
 class HotalResortController extends Controller
 {
+
+
     public function index(Request $request)
     {
         if ($request->searching_filter == "searching") {
@@ -57,19 +59,7 @@ class HotalResortController extends Controller
             }
             $kazi_hotels = $query->paginate(100);
             $hotel_name = Hotel::select('id', 'name')->where('status', true)->get()->toArray();
-            return view('front.hotels_and_resort.kaziranga_hotels', [
-                'kazi_hotels' => $kazi_hotels,
-                'hotel_name' => $hotel_name,
-                'hotel' => $hotel,
-                'allHotels' => $allHotels,
-                'checked_in' => $checked_in,
-                'checked_out' => $checked_out,
-                'setAdultsTotal' => $setAdultsTotal,
-                'setChildTotal' => $setChildTotal,
-                'setRoomsTotal' => $setRoomsTotal,
-                'setNightsDiff' => $setNightsDiff,
-                'searching_filter' => $searching_filter
-            ]);
+            return view('front.hotel.hotel');
         } else {
             $hotel   = PageManagement::Where('type', 'hotel')->first();
 
@@ -120,102 +110,106 @@ class HotalResortController extends Controller
             Session::put('searching_filter', "notSearching");
             Session::put('allHotels', "");
 
-            return view('front.hotels_and_resort.kaziranga_hotels', ['kazi_hotels' => $kazi_hotels, 'hotel_name' => $hotel_name, 'hotel' => $hotel, 'setNightsDiff' => $setNightsDiff, 'checked_in' => $checked_in, 'checked_out' => $checked_out, 'setAdultsTotal' => $setAdultsTotal, 'setChildTotal' => $setChildTotal, 'setRoomsTotal' => $setRoomsTotal, 'searching_filter' => $searching_filter, 'allHotels' => $allHotels]);
+            return view('front.hotel.hotel');
         }
     }
-
-    public function hotelDetails(Request $request, $slug)
+    public function hotelDetails()
     {
-        $hotel = Hotel::where('slug', $slug)->first();
-        $hotelId = $hotel->id;
-
-        $hotelAmenities = HotelAmenities::where('hotel_id', $hotel->id)->where('status', true)->pluck('amenity_id');
-        $allAmenities = Amenities::whereIn('id', $hotelAmenities)->where('status', true)->get()->toArray();
-
-        $hotelRooms = HotelRoom::where('hotel_id', $hotel->id)->where('status', true)->get();
-        $hotel_name = Hotel::select('id', 'name')->where('status', true)->get()->toArray();
-
-        if ($request->searching_filter == "searching2") {
-            Session::put('searching_filter', $request->searching_filter);
-            Session::put('allHotels', $request->all_hotels);
-            Session::put('check_in', $request->check_in);
-            Session::put('check_out', $request->check_out);
-            Session::put('setAdultsTotal', $request->setAdultsTotal);
-            Session::put('setChildTotal', $request->setChildTotal);
-            Session::put('setRoomsTotal', $request->setRoomsTotal);
-            Session::put('setNightsDiff', $request->setNightsDiff);
-
-            Session::put('setJsonData', $request->setJsonData);
-
-            $searching_filter = $request->searching_filter;
-            $setNightsDiff = $request->setNightsDiff;
-
-            $allHotels = $request->input('all_hotels');
-            $setAdultsTotal = $request->setAdultsTotal;
-            $setChildTotal = $request->setChildTotal;
-            $setRoomsTotal = $request->setRoomsTotal;
-            $check_in = $request->input('check_in');
-            $check_out = $request->input('check_out');
-
-            $getArrayRep =  $this->applyFilterData($request->setJsonData);
-            $setAdultsTotal = $getArrayRep['adults'];
-            $setChildTotal = $getArrayRep['child'];
-            $setRoomsTotal = $getArrayRep['room'];
-
-            if ($setAdultsTotal == Null) {
-                $setAdultsTotal = 2;
-            } else {
-                $setAdultsTotal = $setAdultsTotal;
-            }
-            if ($setChildTotal == Null) {
-                $setChildTotal = 0;
-            } else {
-                $setChildTotal = $setChildTotal;
-            }
-            if ($setRoomsTotal == Null) {
-                $setRoomsTotal = 1;
-            } else {
-                $setRoomsTotal = $setRoomsTotal;
-            }
-
-            return view('front.hotels_and_resort.kaziranga_hotels_details', compact('slug', 'hotel', 'allAmenities', 'hotel_name', 'hotelId', 'hotelRooms', 'setNightsDiff', 'check_in', 'check_out', 'searching_filter', 'allHotels', 'setAdultsTotal', 'setChildTotal', 'setRoomsTotal'));
-        } else {
-            $check_in = Session::get('check_in');
-            $check_out = Session::get('check_out');
-            $check_in = date_create_from_format('m/d/Y', $check_in);
-            $check_in = $check_in->format('Y-m-d');
-            $check_out = date_create_from_format('m/d/Y', $check_out);
-            $check_out = $check_out->format('Y-m-d');
-
-            $searching_filter = Session::get('searching_filter');
-            $allHotels = Session::get('allHotels');
-            $setNightsDiff = Session::get('setNightsDiff');
-
-            $setJsonData = Session::get('setJsonData');
-            $getArrayRep =  $this->applyFilterData($setJsonData);
-            $setAdultsTotal = $getArrayRep['adults'];
-            $setChildTotal = $getArrayRep['child'];
-            $setRoomsTotal = $getArrayRep['room'];
-
-            if ($setAdultsTotal == Null) {
-                $setAdultsTotal = 2;
-            } else {
-                $setAdultsTotal = $setAdultsTotal;
-            }
-            if ($setChildTotal == Null) {
-                $setChildTotal = 0;
-            } else {
-                $setChildTotal = $setChildTotal;
-            }
-            if ($setRoomsTotal == Null) {
-                $setRoomsTotal = 1;
-            } else {
-                $setRoomsTotal = $setRoomsTotal;
-            }
-
-            return view('front.hotels_and_resort.kaziranga_hotels_details', compact('slug', 'hotel', 'allAmenities', 'hotel_name', 'hotelId', 'hotelRooms', 'setNightsDiff', 'check_in', 'check_out', 'searching_filter', 'setAdultsTotal', 'setChildTotal', 'setRoomsTotal', 'allHotels'));
-        }
+        return view('front.hotel.hotel-detail');
     }
+
+    // public function hotelDetails(Request $request, $slug)
+    // {
+    //     $hotel = Hotel::where('slug', $slug)->first();
+    //     $hotelId = $hotel->id;
+
+    //     $hotelAmenities = HotelAmenities::where('hotel_id', $hotel->id)->where('status', true)->pluck('amenity_id');
+    //     $allAmenities = Amenities::whereIn('id', $hotelAmenities)->where('status', true)->get()->toArray();
+
+    //     $hotelRooms = HotelRoom::where('hotel_id', $hotel->id)->where('status', true)->get();
+    //     $hotel_name = Hotel::select('id', 'name')->where('status', true)->get()->toArray();
+
+    //     if ($request->searching_filter == "searching2") {
+    //         Session::put('searching_filter', $request->searching_filter);
+    //         Session::put('allHotels', $request->all_hotels);
+    //         Session::put('check_in', $request->check_in);
+    //         Session::put('check_out', $request->check_out);
+    //         Session::put('setAdultsTotal', $request->setAdultsTotal);
+    //         Session::put('setChildTotal', $request->setChildTotal);
+    //         Session::put('setRoomsTotal', $request->setRoomsTotal);
+    //         Session::put('setNightsDiff', $request->setNightsDiff);
+
+    //         Session::put('setJsonData', $request->setJsonData);
+
+    //         $searching_filter = $request->searching_filter;
+    //         $setNightsDiff = $request->setNightsDiff;
+
+    //         $allHotels = $request->input('all_hotels');
+    //         $setAdultsTotal = $request->setAdultsTotal;
+    //         $setChildTotal = $request->setChildTotal;
+    //         $setRoomsTotal = $request->setRoomsTotal;
+    //         $check_in = $request->input('check_in');
+    //         $check_out = $request->input('check_out');
+
+    //         $getArrayRep =  $this->applyFilterData($request->setJsonData);
+    //         $setAdultsTotal = $getArrayRep['adults'];
+    //         $setChildTotal = $getArrayRep['child'];
+    //         $setRoomsTotal = $getArrayRep['room'];
+
+    //         if ($setAdultsTotal == Null) {
+    //             $setAdultsTotal = 2;
+    //         } else {
+    //             $setAdultsTotal = $setAdultsTotal;
+    //         }
+    //         if ($setChildTotal == Null) {
+    //             $setChildTotal = 0;
+    //         } else {
+    //             $setChildTotal = $setChildTotal;
+    //         }
+    //         if ($setRoomsTotal == Null) {
+    //             $setRoomsTotal = 1;
+    //         } else {
+    //             $setRoomsTotal = $setRoomsTotal;
+    //         }
+
+    //         return view('front.hotel.hotel-detail');
+    //     } else {
+    //         $check_in = Session::get('check_in');
+    //         $check_out = Session::get('check_out');
+    //         $check_in = date_create_from_format('m/d/Y', $check_in);
+    //         $check_in = $check_in->format('Y-m-d');
+    //         $check_out = date_create_from_format('m/d/Y', $check_out);
+    //         $check_out = $check_out->format('Y-m-d');
+
+    //         $searching_filter = Session::get('searching_filter');
+    //         $allHotels = Session::get('allHotels');
+    //         $setNightsDiff = Session::get('setNightsDiff');
+
+    //         $setJsonData = Session::get('setJsonData');
+    //         $getArrayRep =  $this->applyFilterData($setJsonData);
+    //         $setAdultsTotal = $getArrayRep['adults'];
+    //         $setChildTotal = $getArrayRep['child'];
+    //         $setRoomsTotal = $getArrayRep['room'];
+
+    //         if ($setAdultsTotal == Null) {
+    //             $setAdultsTotal = 2;
+    //         } else {
+    //             $setAdultsTotal = $setAdultsTotal;
+    //         }
+    //         if ($setChildTotal == Null) {
+    //             $setChildTotal = 0;
+    //         } else {
+    //             $setChildTotal = $setChildTotal;
+    //         }
+    //         if ($setRoomsTotal == Null) {
+    //             $setRoomsTotal = 1;
+    //         } else {
+    //             $setRoomsTotal = $setRoomsTotal;
+    //         }
+
+    //         return view('front.hotels_and_resort.kaziranga_hotels_details', compact('slug', 'hotel', 'allAmenities', 'hotel_name', 'hotelId', 'hotelRooms', 'setNightsDiff', 'check_in', 'check_out', 'searching_filter', 'setAdultsTotal', 'setChildTotal', 'setRoomsTotal', 'allHotels'));
+    //     }
+    // }
 
     public function applyFilterData($setJsonData)
     {

@@ -10,7 +10,8 @@ class AboutController extends Controller
 {
     public function index()
     {
-        $about = PageManagement::where('type', 'about')->first();
-        return view('front.about.about',compact('about'));
+        // $about = PageManagement::where('type', 'about')->first();
+        // return view('front.about.about',compact('about'));
+        return view('front.about.about');
     }
 }

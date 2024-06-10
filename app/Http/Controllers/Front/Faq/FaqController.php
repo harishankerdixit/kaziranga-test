@@ -10,7 +10,7 @@ class FaqController extends Controller
 {
     public function index()
     {
-        $faq = PageManagement::where('type', 'faq')->first();
-        return view('front.faq.faq',compact('faq'));
+        // $faq = PageManagement::where('type', 'faq')->first();
+        return view('front.faq.faq');
     }
 }

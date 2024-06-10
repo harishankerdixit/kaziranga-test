@@ -10,7 +10,7 @@ class CancellationController extends Controller
 {
     public function index()
     {
-        $cancellation = PageManagement::where('type', 'cancellation')->first();
-        return view('front.cancellation_policy.cancellation_policy',compact('cancellation'));
+        // $cancellation = PageManagement::where('type', 'cancellation')->first();
+        return view('front.cancellation_policy.cancellation_policy',);
     }
 }

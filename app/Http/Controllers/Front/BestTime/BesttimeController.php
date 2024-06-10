@@ -10,7 +10,7 @@ class BesttimeController extends Controller
 {
     public function index()
     {
-        $besttime = PageManagement::where('type', 'besttime')->first();
-        return view('front.best_time.best_time',compact('besttime'));
+        // $besttime = PageManagement::where('type', 'besttime')->first();
+        return view('front.best_time.best_time');
     }
 }

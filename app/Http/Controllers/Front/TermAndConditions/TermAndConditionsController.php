@@ -10,7 +10,7 @@ class TermAndConditionsController extends Controller
 {
     public function index()
     {
-        $term = PageManagement::where('type', 'term')->first();
-        return view('front.terms.terms',compact('term'));
+        // $term = PageManagement::where('type', 'term')->first();
+        return view('front.terms.terms');
     }
 }
