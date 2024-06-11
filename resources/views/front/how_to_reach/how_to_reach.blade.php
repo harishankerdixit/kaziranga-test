@@ -70,7 +70,8 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/attractions/By Flight .jpg" alt="" class="img-fluid" />
+                                        <img src="{{ asset('front/assets/img/attractions/By Flight .jpg') }}" alt=""
+                                            class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +95,8 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/attractions/by Train.jpg" alt="" class="img-fluid" />
+                                        <img src="{{ asset('front/assets/img/attractions/by Train.jpg') }}" alt=""
+                                            class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +117,8 @@
                                         Kumbhalgarh to Jawai: 90 km
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/attractions/By Road .jpg" alt="" class="img-fluid" />
+                                        <img src="{{ asset('front/assets/img/attractions/By Road .jpg') }}" alt=""
+                                            class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +142,8 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-4.jpg" alt="" class="img-fluid" />
+                                        <img src="{{ asset('front/assets/img/departments-4.jpg') }}" alt=""
+                                            class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +165,8 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="assets/img/departments-5.jpg" alt="" class="img-fluid" />
+                                        <img src="{{ asset('front/assets/img/departments-5.jpg') }}" alt=""
+                                            class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
