@@ -29,9 +29,9 @@
 
                             </div>
                             <!-- <div class="col">
-                                                                        <button class="filter-btn ms-5">Apply</button>
+                                                                                                    <button class="filter-btn ms-5">Apply</button>
 
-                                                                      </div> -->
+                                                                                                  </div> -->
                         </div>
                         <div class="filter-section">
 
@@ -172,7 +172,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="packages-listing">
-                                            <h5 class="fw-bold fs-5 package-name mt-2">
+                                            <h5 class="fw-bold fs-5 package-name mt-3">
                                                 Gir lion Tour with Jeep and Elephant
                                                 Safari
                                             </h5>
@@ -222,12 +222,12 @@
                                             </div>
                                             <div class="row mt-2">
                                                 <div class="col">
-                                                    <div class="flex-container mt-1">
+                                                    <div class="flex-container mt-2">
                                                         <div class="flex-item">
                                                             <div class="">
                                                                 <a href="innerpackages.html"
                                                                     class="btn btn-custom enquiry-now-btn"
-                                                                    class="btn enquire_now" data-bs-toggle="modal"
+                                                                    class="btn enquire_now btn-sm" data-bs-toggle="modal"
                                                                     data-bs-target="#exampleModal1"
                                                                     data-bs-whatever="@getbootstrap">Enquiry Now</a>
                                                             </div>

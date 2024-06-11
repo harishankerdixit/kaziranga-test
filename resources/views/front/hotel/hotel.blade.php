@@ -16,8 +16,8 @@
                     <div class="form-group">
                         <label>CHECK-IN / CHECK-OUT</label>
                         <div class="d-flex gap-1">
-                            <input type="text" class="form-control" id="checkinDate" placeholder="Check-in Date" />
-                            <input type="text" class="form-control" id="checkoutDate" placeholder="Check-out Date" />
+                            <input type="celender" class="form-control" id="checkinDate" placeholder="Check-in Date" />
+                            <input type="celender" class="form-control" id="checkoutDate" placeholder="Check-out Date" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -589,534 +589,534 @@
                             </div>
                         </div>
                         <!-- <div class="row search-card-result">
-                                                                                  <div class="col-md-4 image_carousel">
-                                                                                    <div
-                                                                                      id="carouselExampleControls"
-                                                                                      class="carousel slide first_image"
-                                                                                      data-bs-ride="carousel"
-                                                                                    >
-                                                                                      <div class="carousel-inner">
-                                                                                        <div class="carousel-item active">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/2/WhatsApp%20Image%202021-09-01%20at%206.06.29%20PM%20(1).jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/3/WhatsApp%20Image%202021-07-15%20at%203.02.00%20PM%20(9).jpg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/4/WhatsApp%20Image%202022-04-18%20at%204.38.37%20PM.jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                      </div>
-                                                                                      <button
-                                                                                        class="carousel-control-prev"
-                                                                                        type="button"
-                                                                                        data-bs-target="#carouselExampleControls"
-                                                                                        data-bs-slide="prev"
-                                                                                      >
-                                                                                        <span
-                                                                                          class="carousel-control-prev-icon"
-                                                                                          aria-hidden="true"
-                                                                                        ></span>
-                                                                                        <span class="visually-hidden">Previous</span>
-                                                                                      </button>
-                                                                                      <button
-                                                                                        class="carousel-control-next"
-                                                                                        type="button"
-                                                                                        data-bs-target="#carouselExampleControls"
-                                                                                        data-bs-slide="next"
-                                                                                      >
-                                                                                        <span
-                                                                                          class="carousel-control-next-icon"
-                                                                                          aria-hidden="true"
-                                                                                        ></span>
-                                                                                        <span class="visually-hidden">Next</span>
-                                                                                      </button>
-                                                                                    </div> -->
+                                                                                                          <div class="col-md-4 image_carousel">
+                                                                                                            <div
+                                                                                                              id="carouselExampleControls"
+                                                                                                              class="carousel slide first_image"
+                                                                                                              data-bs-ride="carousel"
+                                                                                                            >
+                                                                                                              <div class="carousel-inner">
+                                                                                                                <div class="carousel-item active">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/2/WhatsApp%20Image%202021-09-01%20at%206.06.29%20PM%20(1).jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/3/WhatsApp%20Image%202021-07-15%20at%203.02.00%20PM%20(9).jpg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/4/WhatsApp%20Image%202022-04-18%20at%204.38.37%20PM.jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                              <button
+                                                                                                                class="carousel-control-prev"
+                                                                                                                type="button"
+                                                                                                                data-bs-target="#carouselExampleControls"
+                                                                                                                data-bs-slide="prev"
+                                                                                                              >
+                                                                                                                <span
+                                                                                                                  class="carousel-control-prev-icon"
+                                                                                                                  aria-hidden="true"
+                                                                                                                ></span>
+                                                                                                                <span class="visually-hidden">Previous</span>
+                                                                                                              </button>
+                                                                                                              <button
+                                                                                                                class="carousel-control-next"
+                                                                                                                type="button"
+                                                                                                                data-bs-target="#carouselExampleControls"
+                                                                                                                data-bs-slide="next"
+                                                                                                              >
+                                                                                                                <span
+                                                                                                                  class="carousel-control-next-icon"
+                                                                                                                  aria-hidden="true"
+                                                                                                                ></span>
+                                                                                                                <span class="visually-hidden">Next</span>
+                                                                                                              </button>
+                                                                                                            </div> -->
 
                         <!-- <div class="imghotelList">
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont smokyBg">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          />
-                                                                                          <span class="viewAllText">View All</span>
-                                                                                        </a>
-                                                                                      </span>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                  <div class="col-md-6">
-                                                                                    <div class="title_star">
-                                                                                      <h5>Jawai Empire Resort</h5>
-                                                                                      <div class="review">
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                      </div>
-                                                                                    </div>
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont smokyBg">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  />
+                                                                                                                  <span class="viewAllText">View All</span>
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                          <div class="col-md-6">
+                                                                                                            <div class="title_star">
+                                                                                                              <h5>Jawai Empire Resort</h5>
+                                                                                                              <div class="review">
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                              </div>
+                                                                                                            </div>
 
-                                                                                    <p class="hotel_subtitle">
-                                                                                      Ramnagar, Dhikuli, Uttarakhand 244715
-                                                                                    </p>
-                                                                                    <div class="large-icons">
-                                                                                      <i class="fas fa-swimmer m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-utensils m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-wifi m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-car m-2 fa-2x"></i>
-                                                                                    </div>
-                                                                                    <p class="hotel-description">
-                                                                                      This beautiful place is located close to the safari point of Jawai where you can see lots of birds. It offers spacious AC tents with comfortable stay.
-                                                                                    </p>
-                                                                                    <div>
-                                                                                      <img
-                                                                                        src="/assets/img/couple.webp"
-                                                                                        class="small-image"
-                                                                                        alt="couples"
-                                                                                      />Couple Friendly
-                                                                                    </div>
-                                                                                  </div>
+                                                                                                            <p class="hotel_subtitle">
+                                                                                                              Ramnagar, Dhikuli, Uttarakhand 244715
+                                                                                                            </p>
+                                                                                                            <div class="large-icons">
+                                                                                                              <i class="fas fa-swimmer m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-utensils m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-wifi m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-car m-2 fa-2x"></i>
+                                                                                                            </div>
+                                                                                                            <p class="hotel-description">
+                                                                                                              This beautiful place is located close to the safari point of Jawai where you can see lots of birds. It offers spacious AC tents with comfortable stay.
+                                                                                                            </p>
+                                                                                                            <div>
+                                                                                                              <img
+                                                                                                                src="/assets/img/couple.webp"
+                                                                                                                class="small-image"
+                                                                                                                alt="couples"
+                                                                                                              />Couple Friendly
+                                                                                                            </div>
+                                                                                                          </div>
 
-                                                                                  <div class="col-md-2 border-left text-right more-offers">
-                                                                                    <div class="mobile_flex">
-                                                                                      <div class="left_text">
-                                                                                        <p class="rev">
-                                                                                          Very Good &nbsp;
-                                                                                          <span class="hotel_badge">8.5</span>
-                                                                                        </p>
-                                                                                      </div>
+                                                                                                          <div class="col-md-2 border-left text-right more-offers">
+                                                                                                            <div class="mobile_flex">
+                                                                                                              <div class="left_text">
+                                                                                                                <p class="rev">
+                                                                                                                  Very Good &nbsp;
+                                                                                                                  <span class="hotel_badge">8.5</span>
+                                                                                                                </p>
+                                                                                                              </div>
 
-                                                                                      <div class="right-text">
-                                                                                        <h4>₹ 4,499</h4>
-                                                                                        <p class="additions">+ ₹ 462 taxes & fees Per Night</p>
-                                                                                      </div>
-                                                                                    </div>
+                                                                                                              <div class="right-text">
+                                                                                                                <h4>₹ 4,499</h4>
+                                                                                                                <p class="additions">+ ₹ 462 taxes & fees Per Night</p>
+                                                                                                              </div>
+                                                                                                            </div>
 
-                                                                                    <div class="rightbuttongroup">
-                                                                                      <a href="innercorbetthotels.html" class="btn enquire_now"
-                                                                                        >Enquire Now</a
-                                                                                      >
-                                                                                      <a href="/innerhotels/innerhotel.html" class="btn view_more"
-                                                                                        >View More</a
-                                                                                      >
-                                                                                    </div>
-                                                                                  </div>
-                                                                                </div> -->
+                                                                                                            <div class="rightbuttongroup">
+                                                                                                              <a href="innercorbetthotels.html" class="btn enquire_now"
+                                                                                                                >Enquire Now</a
+                                                                                                              >
+                                                                                                              <a href="/innerhotels/innerhotel.html" class="btn view_more"
+                                                                                                                >View More</a
+                                                                                                              >
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div> -->
                         <!--
-                                                                                <div class="row search-card-result">
-                                                                                  <div class="col-md-4 image_carousel">
-                                                                                    <div
-                                                                                      id="carouselExampleControls"
-                                                                                      class="carousel slide first_image"
-                                                                                      data-bs-ride="carousel"
-                                                                                    >
-                                                                                      <div class="carousel-inner">
-                                                                                        <div class="carousel-item active">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/2/WhatsApp%20Image%202021-09-01%20at%206.06.29%20PM%20(1).jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/3/WhatsApp%20Image%202021-07-15%20at%203.02.00%20PM%20(9).jpg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/4/WhatsApp%20Image%202022-04-18%20at%204.38.37%20PM.jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                      </div>
-                                                                                      <button
-                                                                                        class="carousel-control-prev"
-                                                                                        type="button"
-                                                                                        data-bs-target="#carouselExampleControls"
-                                                                                        data-bs-slide="prev"
-                                                                                      >
-                                                                                        <span
-                                                                                          class="carousel-control-prev-icon"
-                                                                                          aria-hidden="true"
-                                                                                        ></span>
-                                                                                        <span class="visually-hidden">Previous</span>
-                                                                                      </button>
-                                                                                      <button
-                                                                                        class="carousel-control-next"
-                                                                                        type="button"
-                                                                                        data-bs-target="#carouselExampleControls"
-                                                                                        data-bs-slide="next"
-                                                                                      >
-                                                                                        <span
-                                                                                          class="carousel-control-next-icon"
-                                                                                          aria-hidden="true"
-                                                                                        ></span>
-                                                                                        <span class="visually-hidden">Next</span>
-                                                                                      </button>
-                                                                                    </div>
+                                                                                                        <div class="row search-card-result">
+                                                                                                          <div class="col-md-4 image_carousel">
+                                                                                                            <div
+                                                                                                              id="carouselExampleControls"
+                                                                                                              class="carousel slide first_image"
+                                                                                                              data-bs-ride="carousel"
+                                                                                                            >
+                                                                                                              <div class="carousel-inner">
+                                                                                                                <div class="carousel-item active">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/2/WhatsApp%20Image%202021-09-01%20at%206.06.29%20PM%20(1).jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/3/WhatsApp%20Image%202021-07-15%20at%203.02.00%20PM%20(9).jpg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/4/WhatsApp%20Image%202022-04-18%20at%204.38.37%20PM.jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                              <button
+                                                                                                                class="carousel-control-prev"
+                                                                                                                type="button"
+                                                                                                                data-bs-target="#carouselExampleControls"
+                                                                                                                data-bs-slide="prev"
+                                                                                                              >
+                                                                                                                <span
+                                                                                                                  class="carousel-control-prev-icon"
+                                                                                                                  aria-hidden="true"
+                                                                                                                ></span>
+                                                                                                                <span class="visually-hidden">Previous</span>
+                                                                                                              </button>
+                                                                                                              <button
+                                                                                                                class="carousel-control-next"
+                                                                                                                type="button"
+                                                                                                                data-bs-target="#carouselExampleControls"
+                                                                                                                data-bs-slide="next"
+                                                                                                              >
+                                                                                                                <span
+                                                                                                                  class="carousel-control-next-icon"
+                                                                                                                  aria-hidden="true"
+                                                                                                                ></span>
+                                                                                                                <span class="visually-hidden">Next</span>
+                                                                                                              </button>
+                                                                                                            </div>
 
-                                                                                    <div class="imghotelList">
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont smokyBg">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          />
-                                                                                          <span class="viewAllText">View All</span>
-                                                                                        </a>
-                                                                                      </span>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                  <div class="col-md-6">
-                                                                                    <div class="title_star">
-                                                                                      <h5>Jawai Greens</h5>
-                                                                                      <div class="review">
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                      </div>
-                                                                                    </div>
+                                                                                                            <div class="imghotelList">
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont smokyBg">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  />
+                                                                                                                  <span class="viewAllText">View All</span>
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                          <div class="col-md-6">
+                                                                                                            <div class="title_star">
+                                                                                                              <h5>Jawai Greens</h5>
+                                                                                                              <div class="review">
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                              </div>
+                                                                                                            </div>
 
-                                                                                    <p class="hotel_subtitle">
-                                                                                      Ramnagar, Dhikuli, Uttarakhand 244715
-                                                                                    </p>
-                                                                                    <div class="large-icons">
-                                                                                      <i class="fas fa-swimmer m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-utensils m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-wifi m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-car m-2 fa-2x"></i>
-                                                                                    </div>
-                                                                                    <p class="hotel-description">
-                                                                                      Jawai Green is a Luxurious Boutique Homestay cum Resort in Sena. They have a villa of 2 rooms and 3 Private Luxurious Cottages that are designed beautifully.
-                                                                                    </p>
-                                                                                    <div>
-                                                                                      <img
-                                                                                        src="/assets/img/couple.webp"
-                                                                                        class="small-image"
-                                                                                        alt="couples"
-                                                                                      />Couple Friendly
-                                                                                    </div>
-                                                                                  </div>
+                                                                                                            <p class="hotel_subtitle">
+                                                                                                              Ramnagar, Dhikuli, Uttarakhand 244715
+                                                                                                            </p>
+                                                                                                            <div class="large-icons">
+                                                                                                              <i class="fas fa-swimmer m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-utensils m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-wifi m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-car m-2 fa-2x"></i>
+                                                                                                            </div>
+                                                                                                            <p class="hotel-description">
+                                                                                                              Jawai Green is a Luxurious Boutique Homestay cum Resort in Sena. They have a villa of 2 rooms and 3 Private Luxurious Cottages that are designed beautifully.
+                                                                                                            </p>
+                                                                                                            <div>
+                                                                                                              <img
+                                                                                                                src="/assets/img/couple.webp"
+                                                                                                                class="small-image"
+                                                                                                                alt="couples"
+                                                                                                              />Couple Friendly
+                                                                                                            </div>
+                                                                                                          </div>
 
-                                                                                  <div class="col-md-2 border-left text-right more-offers">
-                                                                                    <div class="mobile_flex">
-                                                                                      <div class="left_text">
-                                                                                        <p class="rev">
-                                                                                          Very Good &nbsp;
-                                                                                          <span class="hotel_badge">8.5</span>
-                                                                                        </p>
-                                                                                      </div>
+                                                                                                          <div class="col-md-2 border-left text-right more-offers">
+                                                                                                            <div class="mobile_flex">
+                                                                                                              <div class="left_text">
+                                                                                                                <p class="rev">
+                                                                                                                  Very Good &nbsp;
+                                                                                                                  <span class="hotel_badge">8.5</span>
+                                                                                                                </p>
+                                                                                                              </div>
 
-                                                                                      <div class="right-text">
-                                                                                        <h4>₹ 4,499</h4>
-                                                                                        <p class="additions">+ ₹ 462 taxes & fees Per Night</p>
-                                                                                      </div>
-                                                                                    </div>
-                                                                                    <div class="rightbuttongroup">
-                                                                                      <a href="innercorbetthotels.html" class="btn enquire_now"
-                                                                                        >Enquire Now</a
-                                                                                      >
-                                                                                      <a href="innercorbetthotels.html" class="btn view_more"
-                                                                                        >View More</a
-                                                                                      >
-                                                                                    </div>
-                                                                                  </div>
-                                                                                </div> -->
+                                                                                                              <div class="right-text">
+                                                                                                                <h4>₹ 4,499</h4>
+                                                                                                                <p class="additions">+ ₹ 462 taxes & fees Per Night</p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                            <div class="rightbuttongroup">
+                                                                                                              <a href="innercorbetthotels.html" class="btn enquire_now"
+                                                                                                                >Enquire Now</a
+                                                                                                              >
+                                                                                                              <a href="innercorbetthotels.html" class="btn view_more"
+                                                                                                                >View More</a
+                                                                                                              >
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div> -->
 
                         <!-- <div class="row search-card-result">
-                                                                                  <div class="col-md-4 image_carousel">
-                                                                                    <div
-                                                                                      id="carouselExampleControls"
-                                                                                      class="carousel slide first_image"
-                                                                                      data-bs-ride="carousel"
-                                                                                    >
-                                                                                      <div class="carousel-inner">
-                                                                                        <div class="carousel-item active">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/2/WhatsApp%20Image%202021-09-01%20at%206.06.29%20PM%20(1).jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/3/WhatsApp%20Image%202021-07-15%20at%203.02.00%20PM%20(9).jpg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                        <div class="carousel-item">
-                                                                                          <img
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/4/WhatsApp%20Image%202022-04-18%20at%204.38.37%20PM.jpeg"
-                                                                                            class="d-block w-100"
-                                                                                            alt="..."
-                                                                                          />
-                                                                                        </div>
-                                                                                      </div>
-                                                                                      <button
-                                                                                        class="carousel-control-prev"
-                                                                                        type="button"
-                                                                                        data-bs-target="#carouselExampleControls"
-                                                                                        data-bs-slide="prev"
-                                                                                      >
-                                                                                        <span
-                                                                                          class="carousel-control-prev-icon"
-                                                                                          aria-hidden="true"
-                                                                                        ></span>
-                                                                                        <span class="visually-hidden">Previous</span>
-                                                                                      </button>
-                                                                                      <button
-                                                                                        class="carousel-control-next"
-                                                                                        type="button"
-                                                                                        data-bs-target="#carouselExampleControls"
-                                                                                        data-bs-slide="next"
-                                                                                      >
-                                                                                        <span
-                                                                                          class="carousel-control-next-icon"
-                                                                                          aria-hidden="true"
-                                                                                        ></span>
-                                                                                        <span class="visually-hidden">Next</span>
-                                                                                      </button>
-                                                                                    </div>
+                                                                                                          <div class="col-md-4 image_carousel">
+                                                                                                            <div
+                                                                                                              id="carouselExampleControls"
+                                                                                                              class="carousel slide first_image"
+                                                                                                              data-bs-ride="carousel"
+                                                                                                            >
+                                                                                                              <div class="carousel-inner">
+                                                                                                                <div class="carousel-item active">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/2/WhatsApp%20Image%202021-09-01%20at%206.06.29%20PM%20(1).jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/3/WhatsApp%20Image%202021-07-15%20at%203.02.00%20PM%20(9).jpg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                                <div class="carousel-item">
+                                                                                                                  <img
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/4/WhatsApp%20Image%202022-04-18%20at%204.38.37%20PM.jpeg"
+                                                                                                                    class="d-block w-100"
+                                                                                                                    alt="..."
+                                                                                                                  />
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                              <button
+                                                                                                                class="carousel-control-prev"
+                                                                                                                type="button"
+                                                                                                                data-bs-target="#carouselExampleControls"
+                                                                                                                data-bs-slide="prev"
+                                                                                                              >
+                                                                                                                <span
+                                                                                                                  class="carousel-control-prev-icon"
+                                                                                                                  aria-hidden="true"
+                                                                                                                ></span>
+                                                                                                                <span class="visually-hidden">Previous</span>
+                                                                                                              </button>
+                                                                                                              <button
+                                                                                                                class="carousel-control-next"
+                                                                                                                type="button"
+                                                                                                                data-bs-target="#carouselExampleControls"
+                                                                                                                data-bs-slide="next"
+                                                                                                              >
+                                                                                                                <span
+                                                                                                                  class="carousel-control-next-icon"
+                                                                                                                  aria-hidden="true"
+                                                                                                                ></span>
+                                                                                                                <span class="visually-hidden">Next</span>
+                                                                                                              </button>
+                                                                                                            </div>
 
-                                                                                    <div class="imghotelList">
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                            alt="hotel_image_1"
-                                                                                          />
-                                                                                        </a>
-                                                                                      </span>
-                                                                                      <span class="imghotelCont smokyBg">
-                                                                                        <a
-                                                                                          href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          data-gallery="portfolio-gallery-app"
-                                                                                          class="glightbox"
-                                                                                        >
-                                                                                          <img
-                                                                                            class="imghotel"
-                                                                                            src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
-                                                                                          />
-                                                                                          <span class="viewAllText">View All</span>
-                                                                                        </a>
-                                                                                      </span>
-                                                                                    </div>
-                                                                                  </div>
-                                                                                  <div class="col-md-6">
-                                                                                    <div class="title_star">
-                                                                                      <h5>Jawai Jewels Safari Camps</h5>
-                                                                                      <div class="review">
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                        <span class="fas fa-star checked"></span>
-                                                                                      </div>
-                                                                                    </div>
+                                                                                                            <div class="imghotelList">
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                    alt="hotel_image_1"
+                                                                                                                  />
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                              <span class="imghotelCont smokyBg">
+                                                                                                                <a
+                                                                                                                  href="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  data-gallery="portfolio-gallery-app"
+                                                                                                                  class="glightbox"
+                                                                                                                >
+                                                                                                                  <img
+                                                                                                                    class="imghotel"
+                                                                                                                    src="https://jimcorbett.in/storage/uploads/hotels/1/3.jpeg"
+                                                                                                                  />
+                                                                                                                  <span class="viewAllText">View All</span>
+                                                                                                                </a>
+                                                                                                              </span>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                          <div class="col-md-6">
+                                                                                                            <div class="title_star">
+                                                                                                              <h5>Jawai Jewels Safari Camps</h5>
+                                                                                                              <div class="review">
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                                <span class="fas fa-star checked"></span>
+                                                                                                              </div>
+                                                                                                            </div>
 
-                                                                                    <p class="hotel_subtitle">
-                                                                                      Ramnagar, Dhikuli, Uttarakhand 244715
-                                                                                    </p>
-                                                                                    <div class="large-icons">
-                                                                                      <i class="fas fa-swimmer m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-utensils m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-wifi m-2 fa-2x"></i>
-                                                                                      <i class="fas fa-car m-2 fa-2x"></i>
-                                                                                    </div>
-                                                                                    <p class="hotel-description">
-                                                                                      These camps are the perfect blend of luxury and nature. They offer Luxury tents and container cottages that come with all modern amenities like a shower, AC, a balcony, an electric kettle etc.
-                                                                                    </p>
-                                                                                    <div>
-                                                                                      <img
-                                                                                        src="/assets/img/couple.webp"
-                                                                                        class="small-image"
-                                                                                        alt="couples"
-                                                                                      />Couple Friendly
-                                                                                    </div>
-                                                                                  </div>
+                                                                                                            <p class="hotel_subtitle">
+                                                                                                              Ramnagar, Dhikuli, Uttarakhand 244715
+                                                                                                            </p>
+                                                                                                            <div class="large-icons">
+                                                                                                              <i class="fas fa-swimmer m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-utensils m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-wifi m-2 fa-2x"></i>
+                                                                                                              <i class="fas fa-car m-2 fa-2x"></i>
+                                                                                                            </div>
+                                                                                                            <p class="hotel-description">
+                                                                                                              These camps are the perfect blend of luxury and nature. They offer Luxury tents and container cottages that come with all modern amenities like a shower, AC, a balcony, an electric kettle etc.
+                                                                                                            </p>
+                                                                                                            <div>
+                                                                                                              <img
+                                                                                                                src="/assets/img/couple.webp"
+                                                                                                                class="small-image"
+                                                                                                                alt="couples"
+                                                                                                              />Couple Friendly
+                                                                                                            </div>
+                                                                                                          </div>
 
-                                                                                  <div class="col-md-2 border-left text-right more-offers">
-                                                                                    <div class="mobile_flex">
-                                                                                      <div class="left_text">
-                                                                                        <p class="rev">
-                                                                                          Very Good &nbsp;
-                                                                                          <span class="hotel_badge">8.5</span>
-                                                                                        </p>
-                                                                                      </div>
+                                                                                                          <div class="col-md-2 border-left text-right more-offers">
+                                                                                                            <div class="mobile_flex">
+                                                                                                              <div class="left_text">
+                                                                                                                <p class="rev">
+                                                                                                                  Very Good &nbsp;
+                                                                                                                  <span class="hotel_badge">8.5</span>
+                                                                                                                </p>
+                                                                                                              </div>
 
-                                                                                      <div class="right-text">
-                                                                                        <h4>₹ 4,499</h4>
-                                                                                        <p class="additions">+ ₹ 462 taxes & fees Per Night</p>
-                                                                                      </div>
-                                                                                    </div>
+                                                                                                              <div class="right-text">
+                                                                                                                <h4>₹ 4,499</h4>
+                                                                                                                <p class="additions">+ ₹ 462 taxes & fees Per Night</p>
+                                                                                                              </div>
+                                                                                                            </div>
 
-                                                                                    <div class="rightbuttongroup">
-                                                                                      <a href="innercorbetthotels.html" class="btn enquire_now"
-                                                                                        >Enquire Now</a
-                                                                                      >
-                                                                                      <a href="innercorbetthotels.html" class="btn view_more"
-                                                                                        >View More</a
-                                                                                      >
-                                                                                    </div>
-                                                                                  </div>
-                                                                                </div> -->
+                                                                                                            <div class="rightbuttongroup">
+                                                                                                              <a href="innercorbetthotels.html" class="btn enquire_now"
+                                                                                                                >Enquire Now</a
+                                                                                                              >
+                                                                                                              <a href="innercorbetthotels.html" class="btn view_more"
+                                                                                                                >View More</a
+                                                                                                              >
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div> -->
                     </div>
                 </div>
             </div>

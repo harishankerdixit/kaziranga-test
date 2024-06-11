@@ -15,6 +15,7 @@
     <!-- End Breadcrumbs -->
 
     <main id="main">
+
         <div class="container" data-aos="fade-up">
             <div class="tour_innerpage">
                 <h1 class="ms-lg-5">Gir 1 Night Tour with 1 Jeep Safari</h1>
@@ -63,12 +64,12 @@
                 </div>
             </div>
             <!-- <p class="mt-2 ms-lg-5">Nothing comes even closer to wildlife tours when it is about the Kaziranga fun tour,
-                                famous for
-                                its green vegetation, varied wildlife, beautiful scenery
-                                and pleasant weather round the year and Kaziranga National Park is the first choice of all those who wants
-                                peace and excitement at the same time.
-                                This exclusive fun tour is basically a short duration package and it is fit for those who want to experience
-                                exotic natural beauty and thrills of wildlife.</p> -->
+                                                    famous for
+                                                    its green vegetation, varied wildlife, beautiful scenery
+                                                    and pleasant weather round the year and Kaziranga National Park is the first choice of all those who wants
+                                                    peace and excitement at the same time.
+                                                    This exclusive fun tour is basically a short duration package and it is fit for those who want to experience
+                                                    exotic natural beauty and thrills of wildlife.</p> -->
             <div class="packbutton">
                 <!-- <a href="#form-container" class="btn btn-custom">Book Now</a> -->
             </div>
@@ -169,7 +170,7 @@
                                                                         class="img-fluid" alt="">
 
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2"><i>Hotel 1</i></h4>
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
                                                     </div>
@@ -185,7 +186,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2 "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -204,7 +205,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2 "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -223,7 +224,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -242,7 +243,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -261,7 +262,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -295,7 +296,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
                                                     </div>
@@ -311,7 +312,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
                                                     </div>
@@ -329,26 +330,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
-
-                                                            </div><!-- End Portfolio Item -->
-                                                        </div>
-                                                    </div>
-                                                </div><!-- End testimonial item -->
-
-                                                <div class="swiper-slide">
-                                                    <div class="testimonial-wrap">
-                                                        <div class="testimonial-item">
-                                                            <div class="portfolio-item">
-                                                                <div class="portfolio-wrap">
-                                                                    <a href="assets/img/2020-11-07.webp"
-                                                                        data-gallery="portfolio-gallery-app"
-                                                                        class="glightbox">
-                                                                        <img src="assets/img/2020-11-07.webp"
-                                                                            class="img-fluid" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -367,7 +349,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -386,7 +368,26 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
+
+                                                            </div><!-- End Portfolio Item -->
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End testimonial item -->
+
+                                                <div class="swiper-slide">
+                                                    <div class="testimonial-wrap">
+                                                        <div class="testimonial-item">
+                                                            <div class="portfolio-item">
+                                                                <div class="portfolio-wrap">
+                                                                    <a href="assets/img/2020-11-07.webp"
+                                                                        data-gallery="portfolio-gallery-app"
+                                                                        class="glightbox">
+                                                                        <img src="assets/img/2020-11-07.webp"
+                                                                            class="img-fluid" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -422,7 +423,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -441,7 +442,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -460,7 +461,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -479,7 +480,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -498,7 +499,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -517,7 +518,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -554,7 +555,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -573,44 +574,7 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
-
-                                                            </div><!-- End Portfolio Item -->
-                                                        </div>
-                                                    </div>
-                                                </div><!-- End testimonial item -->
-
-                                                <div class="swiper-slide">
-                                                    <div class="testimonial-wrap">
-                                                        <div class="testimonial-item">
-                                                            <div class="portfolio-item">
-                                                                <div class="portfolio-wrap">
-                                                                    <a href="assets/img/2020-11-07.webp"
-                                                                        data-gallery="portfolio-gallery-app"
-                                                                        class="glightbox">
-                                                                        <img src="assets/img/2020-11-07.webp"
-                                                                            class="img-fluid" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <h4>Hotel1</h4>
-                                                            </div><!-- End Portfolio Item -->
-                                                        </div>
-                                                    </div>
-                                                </div><!-- End testimonial item -->
-
-                                                <div class="swiper-slide">
-                                                    <div class="testimonial-wrap">
-                                                        <div class="testimonial-item">
-                                                            <div class="portfolio-item">
-                                                                <div class="portfolio-wrap">
-                                                                    <a href="assets/img/2020-11-07.webp"
-                                                                        data-gallery="portfolio-gallery-app"
-                                                                        class="glightbox">
-                                                                        <img src="assets/img/2020-11-07.webp"
-                                                                            class="img-fluid" alt="">
-                                                                    </a>
-                                                                </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>
@@ -647,7 +611,44 @@
                                                                             class="img-fluid" alt="">
                                                                     </a>
                                                                 </div>
-                                                                <h4 class="fw-semibold p-2 fs-5"><i>Hotel 1</i></h4>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
+
+                                                            </div><!-- End Portfolio Item -->
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End testimonial item -->
+
+                                                <div class="swiper-slide">
+                                                    <div class="testimonial-wrap">
+                                                        <div class="testimonial-item">
+                                                            <div class="portfolio-item">
+                                                                <div class="portfolio-wrap">
+                                                                    <a href="assets/img/2020-11-07.webp"
+                                                                        data-gallery="portfolio-gallery-app"
+                                                                        class="glightbox">
+                                                                        <img src="assets/img/2020-11-07.webp"
+                                                                            class="img-fluid" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <h4>Hotel1</h4>
+                                                            </div><!-- End Portfolio Item -->
+                                                        </div>
+                                                    </div>
+                                                </div><!-- End testimonial item -->
+
+                                                <div class="swiper-slide">
+                                                    <div class="testimonial-wrap">
+                                                        <div class="testimonial-item">
+                                                            <div class="portfolio-item">
+                                                                <div class="portfolio-wrap">
+                                                                    <a href="assets/img/2020-11-07.webp"
+                                                                        data-gallery="portfolio-gallery-app"
+                                                                        class="glightbox">
+                                                                        <img src="assets/img/2020-11-07.webp"
+                                                                            class="img-fluid" alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <h4 class="fw-semibold p-2  "><i>Hotel 1</i></h4>
 
                                                             </div><!-- End Portfolio Item -->
                                                         </div>

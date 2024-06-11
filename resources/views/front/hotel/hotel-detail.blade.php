@@ -1,14 +1,84 @@
 @extends('front.layouts.main')
 @section('content')
     <main id="main">
+        <div class="floating_form ps-4">
+            <div class="container d-flex justify-content-center">
+                <form class="row">
+                    <div class="form-group">
+                        <label>Select Hotel</label>
+                        <select class="form-select" id="timing" required>
+                            <option value="" disabled selected>All Hotels in Gir</option>
+                            <option value="Morning">Hotel Umang</option>
+                            <option value="Evening">Amidhara Resort</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>CHECK-IN / CHECK-OUT</label>
+                        <div class="d-flex gap-1">
+                            <input type="celender" class="form-control" id="checkinDate" placeholder="Check-in Date" />
+                            <input type="celender" class="form-control" id="checkoutDate" placeholder="Check-out Date" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="safaribooking-total_persons">Select Travellers</label>
+                        <div class="dropdown">
+                            <input type="text" id="totalPersonsInput" class="form-control total-persons-selector"
+                                value="1 Adult" type="button" />
 
-        <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs d-flex align-items-center">
-            <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade"></div>
+                            <div class="dropdown-menu" id="dropdownMenu">
+                                <span class="m-2 fw-bold" style="font-size: small">
+                                    Room 1</span>
+                                <div class="dropdown-item">
+                                    <div class="" style="margin-right: 1rem">
+                                        <label>Adults<span> (13-99Y)</span></label>
+                                    </div>
+
+                                    <div class="inc_dec">
+                                        <div id="adults" class="row">
+                                            <button id="adultDecrease" data-decrease>➖</button>
+                                            <input id="adultInput" class="adult-input" data-value type="text"
+                                                value="1" />
+                                            <button id="adultIncrease" data-increase>➕</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item">
+                                    <div class="" style="margin-right: 1rem">
+                                        <label>Children<span> (3-12Y)</span></label>
+                                    </div>
+                                    <div class="inc_dec">
+                                        <div id="children" class="row">
+                                            <button id="childDecrease" data-decrease>➖</button>
+                                            <input id="childInput" class="child-input" data-value type="text"
+                                                min="0" value="0" />
+                                            <button id="childIncrease" data-increase>➕</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-success" id="addButton">
+                                        Add Room
+                                    </button>
+                                    <button class="btn btn-outline-danger">Remove room</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-group mt-lg-4 mt-md-4 mt-sm-0">
+                        <button class="btn btn-success btn-hotelform" type="submit">Search</button>
+                        <button class="btn btn-danger btn-form-reset" type="reset">reset</button>
+                        <!-- <button class="btn-reset button-29" type="submit">Search</button> -->
+                    </div>
+                </form>
+            </div>
         </div>
+        <!-- ======= Breadcrumbs ======= -->
+        {{-- <div class="breadcrumbs d-flex align-items-center">
+            <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade"></div>
+        </div> --}}
         <!-- End Breadcrumbs -->
 
-        <div class="inner_hotel">
+        <div class="inner_hotel mt-5">
             <div class="container">
                 <div class="top mb-4 align-items-center">
                     <div class="d-flex title_side gap-1">
