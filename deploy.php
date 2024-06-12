@@ -2,50 +2,38 @@
 namespace Deployer;
 
 require 'recipe/laravel.php';
-require 'contrib/npm.php';
+require 'contrib/npm.php'; // Ensure you have this file, or adjust/remove if not necessary
 
-// Config
-set('repository', 'git@gitlab.junglesafariindia.in:abhishek.sinha/jawai.git');
+// Project name
+set('application', 'jawai');
 
-add('shared_files', ['.env','public/.htaccess','public/blog/.htaccess','public/blog/wp-config.php','public/sitemap.xml','public/robots.txt']);
-add('shared_dirs', ['storage','public/blog/wp-content/plugins','public/blog/wp-content/uploads']);
-add('writable_dirs', ['storage','public/blog/wp-content/plugins','public/blog/wp-content/uploads']);
+// Project repository
+set('repository', 'git@gitlab.com:username/repository.git');
+
+// [Optional] Allocate tty for git clone. Default value is false.
+set('git_tty', true);
+
+// Shared files/dirs between deploys
+add('shared_files', []);
+add('shared_dirs', []);
+
+// Writable dirs by web server
+add('writable_dirs', []);
+set('allow_anonymous_stats', false);
 
 // Hosts
-host('production')
-    ->set('hostname', '65.1.86.94')
-    ->set('remote_user', 'ubuntu')
+host('65.1.86.94')
     ->set('deploy_path', '/var/www/html/jawai')
-    ->set('identity_file', '~/.ssh/id_ed25519');
+    ->set('user', 'ubuntu')
+    ->set('identity_file', '~/.ssh/id_rsa');
 
-// Hooks
-task('deploy', [
-    'deploy:prepare',
-    'deploy:vendors',
-    'artisan:storage:link',
-    'artisan:view:cache',
-    'artisan:config:cache',
-   # 'artisan:migrate',
-    'npm:install',
-    'npm:run:prod',
-    'npm:run:build:css',
-    'deploy:publish',
-]);
-
-task('npm:install', function () {
-    cd('{{release_or_current_path}}');
-    run('npm install');
+// Tasks
+task('build', function () {
+    run('cd {{release_path}} && npm install && npm run prod');
 });
 
-task('npm:run:prod', function () {
-    cd('{{release_or_current_path}}');
-    run('npm run build');
-});
-
-task('npm:run:build:css', function () {
-    cd('{{release_or_current_path}}');
-    run('npm run build');
-});
-
+// [Optional] If deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
 
+// Migrate database before symlink new release.
+before('deploy:symlink', 'artisan:migrate');
