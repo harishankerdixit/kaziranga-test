@@ -59,7 +59,7 @@ deploy:
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     #- ~/.composer/vendor/bin/dep deploy production 
-    - dep deploy production
+    - dep deploy
   tags:
     - jawai 
 
