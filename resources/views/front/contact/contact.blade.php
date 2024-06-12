@@ -1,23 +1,20 @@
 @extends('front.layouts.main')
-{{-- @section('title', $contact->title)
+@section('title', $contact->title)
 @section('meta_title', $contact->meta_title)
 @section('meta_description', $contact->meta_description)
-@section('links', 'https://kazirangabooking.com/contact') --}}
+{{-- @section('links', 'https://kazirangabooking.com/contact') --}}
 @section('content')
     <main id="main">
-
-
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
-
-
             <div class="container">
-
                 <div class="row">
                     <div class="section-title-contact">
                         <h2>Contact Info.</h2>
                     </div>
-                    <div class="col-md-6 mt-3">
+
+                    {!! $contact->section_1 !!}
+                    {{-- <div class="col-md-6 mt-3">
                         <div class="row  justify-content-center mb-3 ">
                             <div class="card w-75  contact-info-1 p-2">
                                 <div class="card-body contact-info-card">
@@ -50,7 +47,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="col-xl-6 col-md-6 col-sm-12">
                         <div class="col-xl-10 col-md-12 pb-3" style="margin: auto;">
@@ -89,23 +86,18 @@
                                     </div>
                                 </form>
                             </div>
-                            </aside>
+                            {{-- </aside> --}}
                         </div>
                     </div>
-
                 </div>
-            </div>
-
-
             </div>
             <div class="row mt-5">
                 <div style="width: 100%; height: 500px;"><iframe width="100%" height="100%" frameborder="0"
                         scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=jawai%20national%20park+(jawai%20national%20park%5C)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                            href="https://www.gps.ie/">gps devices</a></iframe></div>
+                            href="https://www.gps.ie/">gps devices</a></iframe>
+                </div>
             </div>
         </section>
-        </section><!-- End Contact Section -->
-
     </main><!-- End #main -->
 @endsection

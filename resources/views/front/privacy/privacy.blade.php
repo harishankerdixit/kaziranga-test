@@ -1,23 +1,22 @@
 @extends('front.layouts.main')
-{{-- @section('title', $privacy->title)
+@section('title', $privacy->title)
 @section('meta_title', $privacy->meta_title)
 @section('meta_description', $privacy->meta_description)
 @section('links', 'https://kazirangabooking.com/privacy-policy')
---}}
+
 @section('content')
     <main id="main">
 
 
         <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
+        {!! $privacy->section_1 !!}
+        {{-- <section id="contact" class="contact">
             <div class="container">
-
                 <div class="section-title">
                     <h2>Privacy Policies</h2>
 
                 </div>
             </div>
-
             <div class="container">
                 <div class="row d-flex justify-content-center ">
                     <div class="col-lg-10 text-justify privcy-page-cnt">
@@ -80,16 +79,8 @@
                             connected from and to us.
                         </p>
                     </div>
-
                 </div>
             </div>
-            </div>
-        </section><!-- End Contact Section -->
-
-
-
-
-
-
+        </section> --}}
     </main><!-- End #main -->
 @endsection

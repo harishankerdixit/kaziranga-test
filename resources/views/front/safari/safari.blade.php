@@ -1,13 +1,14 @@
 @extends('front.layouts.main')
-{{-- @section('title', $homepage->title)
-@section('meta_title', $homepage->meta_title)
-@section('meta_description', $homepage->meta_description)
-@section('links', 'https://kazirangabooking.com/') --}}
+@section('title', $jungle->title)
+@section('meta_title', $jungle->meta_title)
+@section('meta_description', $jungle->meta_description)
+{{-- @section('links', 'https://kazirangabooking.com/') --}}
 @section('content')
     <!-- ======= Hero Section ======= -->
     <section id="hero_safari" class=" justify-content-lg-center p-4  mt-5">
         <div class="row mt-5 mx-5">
-            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+            {!! $jungle->section_1 !!}
+            {{-- <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
                 <div class="periyar-safari-online safari-table-page ">
                     <div class="box1">
                         <h3 class="h4 mt-0 fw-semibold text-light">Jawai Safari Timings &amp; Important Info</h3>
@@ -59,7 +60,9 @@
                             excursion.</article>
                     </div>
                 </div>
-            </div>
+            </div> --}}
+
+
             <div class="col-lg-6 col-sm-12 col-sm-12 ">
                 <form class="booking-form ssafari" id="bookingForm" data-aos="fade-up" style="margin: auto;">
                     <h3 class="mb-4 text-center enqheader">Book Safari Now!</h3>
@@ -68,7 +71,7 @@
 
                         <!-- Date -->
                         <div class="col-md-6 mb-3">
-                            <input type="text" class="form-control formCust" id="datepicker" placeholder="Select Date"
+                            <input type="text" class="form-control formCust calendar" id="datepicker" placeholder="Select Date"
                                 required>
 
                         </div>
@@ -83,10 +86,10 @@
                                 </select>
                             </div>
                             <!-- <select class="form-select formCust" id="timing" required>
-                                                                                                            <option value="" disabled selected>Select TimeSlot</option>
-                                                                                                            <option value="Morning">Morning</option>
-                                                                                                            <option value="Evening">Evening</option>
-                                                                                                          </select> -->
+                                                                                                                        <option value="" disabled selected>Select TimeSlot</option>
+                                                                                                                        <option value="Morning">Morning</option>
+                                                                                                                        <option value="Evening">Evening</option>
+                                                                                                                      </select> -->
                         </div>
                     </div>
                     <div class="row">
@@ -148,104 +151,8 @@
     </section><!-- End Hero -->
 
     <main id="main">
-
-        {{-- <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="weekend-package">
-                            <a href="">
-                                <div class="weekend-package-img">
-                                    <img src="assets\img\package\Jawai Weekend Tour.jpg" class="img-fluid"
-                                        alt="Weekend Package">
-                                </div>
-                                <div class="weekend-package-box">
-                                    <h4>Jawai Weekend Tour</h4>
-                                    <p><span>Duration: 02 Nights & 03 Days</span></p>
-                                    <div class="packagebtn mt-3">
-                                        <a href="./packages.html" class="btn book-safari-btn">View All</a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="weekend-package">
-                            <a href="">
-                                <div class="weekend-package-img">
-                                    <img src="assets\img\package\Jodhpur and Jawai Tour.jpg" class="img-fluid"
-                                        alt="Jodhpur and Jawai Tour">
-                                </div>
-                                <div class="weekend-package-box">
-                                    <h4>Jodhpur and Jawai Tour</h4>
-                                    <p><span>Duration: 02 Nights & 03 Days</span></p>
-                                    <div class="packagebtn mt-3">
-                                        <a href="./packages.html" class="btn book-safari-btn">View All</a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="weekend-package">
-                            <a href="">
-                                <div class="weekend-package-img">
-                                    <img src="assets\img\package\Udaipur and Jawai Tour.jpg" class="img-fluid"
-                                        alt="Udaipur and Jawai Tour">
-                                </div>
-                                <div class="weekend-package-box">
-                                    <h4>Udaipur and Jawai Tour</h4>
-                                    <p><span>Duration: 02 Nights & 03 Days</span></p>
-                                    <div class="packagebtn mt-3">
-                                        <a href="./packages.html" class="btn book-safari-btn">View All</a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 mb-4">
-                        <div class="weekend-package">
-                            <a href="">
-                                <div class="weekend-package-img">
-                                    <img src="assets\img\package\Mount Abu, Jawai Bandh, and Kumbhalgarh Tour.jpg"
-                                        class="img-fluid" alt="Mount Abu, Jawai Bandh, and Kumbhalgarh Tour">
-                                </div>
-                                <div class="weekend-package-box">
-                                    <h4>Mount Abu, Kumbhalgarh ..</h4>
-                                    <p><span>Duration: 03 Nights & 4 Days</span></p>
-                                    <div class="packagebtn mt-3">
-                                        <a href="./packages.html" class="btn book-safari-btn">View All</a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-6 col-lg-3 mb-4">
-                                                                        <div class="weekend-package">
-                                                                          <a href="">
-                                                                            <div class="weekend-package-img">
-                                                                              <img src="assets\img\package\Mount Abu, Jawai Bandh, and Kumbhalgarh Tour.jpg" class="img-fluid"
-                                                                                alt="Mount Abu, Jawai Bandh, and Kumbhalgarh Tour">
-                                                                            </div>
-                                                                            <div class="weekend-package-box">
-                                                                              <h4>Mount Abu, Kumbhalgarh ..</h4>
-                                                                              <p><span>Duration: 03 Nights & 4 Days</span></p>
-                                                                              <div class="packagebtn mt-3">
-                                                                                <a href="./packages.html" class="btn book-safari-btn">View All</a>
-                                                                              </div>
-                                                                            </div>
-                                                                          </a>
-                                                                        </div>
-                                                                      </div> -->
-                </div>
-            </div>
-        </section> --}}
-
-
-        <section class="">
+        {!! $jungle->section_2 !!}
+        {{-- <section class="">
             <div class="container">
                 <div class="section-title">
                     <h2>Jawai Leopard Safari
@@ -262,10 +169,10 @@
                     Don’t forget that only 180 jeeps are allowed here, so book your safari now.
                 </p>
             </div>
-        </section>
+        </section> --}}
 
-
-        <section>
+        {!! $jungle->section_3 !!}
+        {{-- <section>
             <div class="container">
                 <div class="section-title">
                     <h2>Safari Timing </h2>
@@ -291,9 +198,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section>
+        {!! $jungle->section_4 !!}
+        {{-- <section>
             <div class="container">
                 <div class="section-title">
                     <h2>Leopard Safari and Zones</h2>
@@ -330,18 +238,15 @@
                     </div>
                     <div class="col-md-6">
                         <div class="safari_zone_img">
-                            <img src="{{ asset('front\assets\img\package\Leopard safari & Zones Square image.jpg') }}">
-
+                            <img src="front\assets\img\package\Leopard safari & Zones Square image.jpg">
                         </div>
-
                     </div>
                 </div>
-
-
             </div>
-        </section>
+        </section> --}}
 
-        <section class="safari_req_list"
+        {!! $jungle->section_5 !!}
+        {{-- <section class="safari_req_list"
             style="background-image: url('front/assets/img/background/Untitled\ design\ \(17\).png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
             <div class="container">
                 <div class="section-title">
@@ -363,10 +268,10 @@
                     <li>You have to mention the preferred traveling date & Safari timing. </li>
                     <li>There are no permits required in this park but you have to book your safari in Advance.</li>
                 </ol>
-        </section>
+        </section> --}}
 
-
-        <section class="olcards">
+        {!! $jungle->section_6 !!}
+        {{-- <section class="olcards">
             <div class="container">
                 <div class="section-title">
                     <h2>Safari Rules</h2>
@@ -396,9 +301,10 @@
                     </li>
 
                 </ol>
-        </section>
+        </section> --}}
 
-        <section class="safari_imp_list">
+        {!! $jungle->section_7 !!}
+        {{-- <section class="safari_imp_list">
             <div class="container">
                 <div class="section-title">
                     <h2>Important Information</h2>
@@ -420,10 +326,11 @@
                     <li><span class="spanicon">✅</span><span>You cannot carry pets during your ride. </span>
                     </li>
                 </ul>
-        </section>
+        </section> --}}
 
         <!-- ======= Gallery Section ======= -->
-        <section id="gallery" class="gallery">
+        {!! $jungle->section_8 !!}
+        {{-- <section id="gallery" class="gallery">
             <div class="container">
 
                 <div class="section-title">
@@ -437,8 +344,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-1.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-1.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-1.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -446,8 +353,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-2.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-2.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-2.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -455,8 +362,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-3.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-3.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-3.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -464,8 +371,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-4.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-4.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-4.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -473,8 +380,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-5.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-5.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-5.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -482,8 +389,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-6.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-6.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-6.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -491,8 +398,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-7.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-7.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-7.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -500,18 +407,15 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-8.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-8.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-8.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-        </section><!-- End Gallery Section -->
-
-
+        </section> --}}
+        <!-- End Gallery Section -->
     </main><!-- End #main -->
 @endsection

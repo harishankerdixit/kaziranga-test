@@ -54,11 +54,20 @@
 <script src="{{ asset('front/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
 <script src="{{ asset('front/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 <script src="{{ asset('front/assets/vendor/php-email-form/validate.js') }}"></script>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- Template Main JS File -->
 <script src="{{ asset('front/assets/js/main.js') }}"></script>
 <!-- animation link  -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
     AOS.init();
+
+    $(".calendar").datepicker({
+            autoclose: true,
+            format: "yyyy-mm-dd",
+            todayHighlight: true,
+            orientation: "bottom",
+        })
 </script>

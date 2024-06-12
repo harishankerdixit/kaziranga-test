@@ -1,12 +1,15 @@
 @extends('front.layouts.main')
-{{-- @section('title', $besttime->title)
-@section('meta_title', $besttime->meta_title)
-@section('meta_description', $besttime->meta_description)
-@section('links', 'https://kazirangabooking.com/best-time-to-visit-kaziranga') --}}
+@section('title', $bestTime->title)
+@section('meta_title', $bestTime->meta_title)
+@section('meta_description', $bestTime->meta_description)
+{{-- @section('links', 'https://kazirangabooking.com/best-time-to-visit-kaziranga') --}}
 @section('content')
     <main id="main">
-
-        <section class="contact terms">
+        {{-- @php
+            dump($bestTime->toArray());
+        @endphp --}}
+        {!! $bestTime->section_1 !!}
+        {{-- <section class="contact terms">
             <div class="container">
                 <div class="section-title">
                     <h2>Best Time To Visit</h2>
@@ -28,7 +31,7 @@
                     <div class="col-lg-10 text-justify privcy-page-cnt">
                         <div class="row mt-2">
                             <div class="col-lg-2 text-center">
-                                <img src="{{ asset('front/assets/img/gallery/summer.png') }}" height="80px" width="80px">
+                                <img src="front/assets/img/gallery/summer.png" height="80px" width="80px">
                             </div>
                             <div class="col-lg-10">
                                 <h4 class="bttv-heading ">Summer</h4>
@@ -43,7 +46,7 @@
                         </div>
                         <div class="row mt-2">
                             <div class="col-lg-2 text-center">
-                                <img src={{ asset('front/assets/img/gallery/monsoon.png') }} height="80px" width="80px">
+                                <img src="front/assets/img/gallery/monsoon.png" height="80px" width="80px">
                             </div>
                             <div class="col-lg-10">
                                 <h4 class="bttv-heading ">Monsoon</h4>
@@ -57,7 +60,7 @@
                         </div>
                         <div class="row mt-2">
                             <div class="col-lg-2 text-center mt-2">
-                                <img src="{{ asset('front/assets/img/gallery/winter.png') }}" height="80px" width="80px">
+                                <img src="front/assets/img/gallery/winter.png" height="80px" width="80px">
                             </div>
                             <div class="col-lg-10">
                                 <h4 class="bttv-heading ">Winter </h4>
@@ -65,21 +68,12 @@
                                 <p class="">This season is considered best for safaris because the weather remains
                                     pleasant and you can also visit nearby attractions without worrying about the heat.
                                     A lot of migratory birds can also be spotted during this time.
-
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-
-            </div>
-            </div>
-            </div>
-
-        </section>
-
+        </section> --}}
     </main><!-- End #main -->
 @endsection

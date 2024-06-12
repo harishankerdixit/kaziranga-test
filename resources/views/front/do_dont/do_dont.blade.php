@@ -4,10 +4,25 @@
 @section('meta_description', $do_dont->meta_description)
 @section('links', 'https://kazirangabooking.com/do-dont') --}}
 @section('content')
+    <style>
+        .dogreen div>.fa-circle-check {
+            color: rgb(0, 128, 0, 0.7) !important;
+            font-weight: bold;
+        }
+
+        .dored div>.fa-circle-check {
+            color: rgb(255, 0, 0, 0.7) !important;
+            font-weight: bold;
+        }
+
+        .do-heading {
+            color: #654321;
+            font-weight: bold;
+        }
+    </style>
     <main id="main">
-
-
-        <section id="faq" class="faq">
+        {!! $do_dont->section_1 !!}
+        {{-- <section id="faq" class="faq">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Do's and Don'ts</h2>
@@ -61,22 +76,7 @@
                                 </div>
                             </ul>
                         </div>
-                        <style>
-                            .dogreen div>.fa-circle-check {
-                                color: rgb(0, 128, 0, 0.7) !important;
-                                font-weight: bold;
-                            }
 
-                            .dored div>.fa-circle-check {
-                                color: rgb(255, 0, 0, 0.7) !important;
-                                font-weight: bold;
-                            }
-
-                            .do-heading {
-                                color: #654321;
-                                font-weight: bold;
-                            }
-                        </style>
                         <div class="info-box-1 mt-4">
                             <h3 class="do-heading text-start px-4">Don'ts</h3>
                             <ul type="none" class="dored">
@@ -131,10 +131,9 @@
                                 </div>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-    </main><!-- End #main -->
+        </section> --}}
+    </main>
 @endsection

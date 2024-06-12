@@ -10,9 +10,7 @@ class KazirangaSafariController extends Controller
 {
     public function index()
     {
-        // $jungle = PageManagement::where('type', 'jungle')->first();
-        // return view('front.kaziranga_safari.kaziranga_safari', compact('jungle'));
-
-        return view('front.safari.safari');
+        $jungle = PageManagement::where('type', 'jungle')->first();
+        return view('front.safari.safari', compact('jungle'));
     }
 }

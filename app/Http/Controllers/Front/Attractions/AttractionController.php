@@ -10,7 +10,7 @@ class AttractionController extends Controller
 {
     public function index()
     {
-        $attractions = PageManagement::where('type', 'attractions')->first();
-        return view('front.attractions.attractions',compact('attractions'));
+        // $attractions = PageManagement::where('type', 'attractions')->first();
+        return view('front.attractions.attractions');
     }
 }

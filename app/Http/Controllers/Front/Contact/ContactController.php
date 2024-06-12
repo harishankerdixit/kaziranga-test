@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function index()
     {
-        // $contact = PageManagement::where('type', 'contact')->first();
-        return view('front.contact.contact');
+        $contact = PageManagement::where('type', 'contact')->first();
+        return view('front.contact.contact',compact('contact'));
     }
 }

@@ -2,7 +2,7 @@
 {{-- @section('title', $news->title)
 @section('meta_title', $news->meta_title)
 @section('meta_description', $news->meta_description) --}}
-@section('links', 'https://kazirangabooking.com/news')
+{{-- @section('links', 'https://kazirangabooking.com/news') --}}
 @section('content')
 
     <main id="main">

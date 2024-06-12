@@ -10,7 +10,7 @@ class HowToReachController extends Controller
 {
     public function index()
     {
-        // $reach = PageManagement::where('type', 'reach')->first();
-        return view('front.how_to_reach.how_to_reach');
+        $reach = PageManagement::where('type', 'reach')->first();
+        return view('front.how_to_reach.how_to_reach',compact('reach'));
     }
 }
