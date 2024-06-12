@@ -2,7 +2,7 @@
 namespace Deployer;
 
 require 'recipe/laravel.php';
-require 'contrib/npm.php';
+
 
 // Config
 set('repository', 'git@gitlab.junglesafariindia.in:abhishek.sinha/jawai.git');
