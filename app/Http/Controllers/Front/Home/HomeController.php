@@ -17,12 +17,12 @@ class HomeController extends Controller
     public function index()
     {
         try {
-            // $homepage = PageManagement::where('type', 'home')->first();
+            $homepage = PageManagement::where('type', 'home')->first();
             // $packages = Package::where('status', 1)->get();
             // $latestNews = Setting::where('type', 'news')->first();
             // $latestNews['image'] = "admin/auth/" . $latestNews->image;
             // return view('front.home.index', compact('homepage', 'packages', 'latestNews'));
-            return view('front.home.index',);
+            return view('front.home.index',compact('homepage'));
         } catch (\Exception $e) {
             Log::error($e->getMessage());
         }

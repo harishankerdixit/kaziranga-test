@@ -369,6 +369,23 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/superadmin/page-management/attractions/index', [PageManagementController::class, 'attractionsIndex'])->name('page.mangement.attractions.index');
     Route::post('/superadmin/page-management/attractions/store', [PageManagementController::class, 'attractionsStore'])->name('page.mangement.attractions.store');
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     Route::get('/superadmin/page-management/besttime/index', [PageManagementController::class, 'besttimeIndex'])->name('page.mangement.besttime.index');
     Route::post('/superadmin/page-management/besttime/store', [PageManagementController::class, 'besttimeStore'])->name('page.mangement.besttime.store');
 

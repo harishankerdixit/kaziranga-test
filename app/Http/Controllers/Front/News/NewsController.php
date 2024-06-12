@@ -9,7 +9,7 @@ class NewsController extends Controller
 {
     public function index()
     {
-        // $newsess = News::where('status',1)->get();
-        return view('front.news.news');
+        $newsess = News::where('status',1)->get();
+        return view('front.news.news',compact('newsess'));
     }
 }

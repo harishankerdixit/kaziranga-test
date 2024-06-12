@@ -1,12 +1,13 @@
 @extends('front.layouts.main')
-{{-- @section('title', $term->title)
+@section('title', $term->title)
 @section('meta_title', $term->meta_title)
 @section('meta_description', $term->meta_description)
-@section('links', 'https://kazirangabooking.com/terms') --}}
+{{-- @section('links', 'https://kazirangabooking.com/terms') --}}
 @section('content')
     <main id="main">
 
-        <section class="contact terms">
+        {!! $term->section_1 !!}
+        {{-- <section class="contact terms">
             <div class="container">
                 <div class="section-title">
                     <h2>Terms & Conditions</h2>
@@ -75,8 +76,6 @@
                     </div>
                 </div>
             </div>
-
-        </section>
-
+        </section> --}}
     </main><!-- End #main -->
 @endsection

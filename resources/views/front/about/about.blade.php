@@ -1,15 +1,17 @@
 @extends('front.layouts.main')
+@section('title', $about->title)
+@section('meta_title', $about->meta_title)
+@section('meta_description', $about->meta_description)
+{{-- @section('links', 'https://kazirangabooking.com/about') --}}
 @section('content')
     <main id="main">
-
-        <!-- ======= Abou Us Section ======= -->
-        <section class="aboutus" style="padding:40px 0px 0px 0px !important;">
+        {!! $about->section_1 !!}
+        {{-- <section class="aboutus" style="padding:40px 0px 0px 0px !important;">
             <div class="container">
                 <div class="section-title">
                     <h2>About Us</h2>
                 </div>
                 <div class="row">
-
                     <div class="col-lg-12 " style=" padding: 0px  15px !important;">
                         <p class="text-justify">When people wish to experience the heavenly beauty and charm of the
                             National Parks of India then they knock on the door of <b class="fs-5"><i>Jungle Safari
@@ -40,7 +42,7 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End Abou Us Section -->
+        </section>
         <section>
             <div class="container">
                 <div class="row">
@@ -58,28 +60,25 @@
                         <div class="row d-flex justify-content-center">
                             <div class="col-lg-5 mt-2">
                                 <div class="about-image d-flex justify-content-center ">
-                                    <img src="{{ asset('front/assets/img/gallery/gallery-1.jpg') }}" class="about-img"
+                                    <img src="front/assets/img/gallery/gallery-1.jpg" class="about-img"
                                         alt="about-img" height="300px" width="100%">
 
                                 </div>
                             </div>
                             <div class="col-lg-5 mt-2">
                                 <div class="about-image d-flex justify-content-center">
-                                    <img src="{{ asset('front/assets/img/gallery/gallery-1.jpg') }}" class="about-img"
+                                    <img src="front/assets/img/gallery/gallery-1.jpg" class="about-img"
                                         alt="about-img" height="300px" width="100%">
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section><!-- End Abou Us Section -->
+        </section>
         <section>
-
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-12">
                         <h4 class="text-left  fw-semibold fs-3 abotpage-heading">Best Service Provider</h4>
                         <article class="text-justify ">We provide our service in a systematic way which is very
@@ -88,31 +87,10 @@
                             or you can also call him to arrange your meeting. Once the meeting point is fixed with the
                             coordinator or you can say your tour assistant, he will take you for the safari ride. Be
                             ready to explore the thrilling area while gaining knowledge about the same.
-
-
                         </article>
                     </div>
-                    <!-- <div class="col-lg-12 d-flex justify-content-center mt-4">
-                                                        <div class="col-8 aboupage-content d-flex">
-                                                            <div class="col text-center about-pageline">
-                                                                <h1 class="fw-semibold color-about-text">678 k</h1>
-                                                                <p class="fw-semibold">Happy Traveler</p>
-                                                            </div>
-                                                            <div class="col text-center about-pageline">
-                                                                <h1 class="fw-semibold color-about-text">90 %</h1>
-                                                                <p class="fw-semibold">Satisfaction Rate</p>
-                                                            </div>
-                                                            <div class="col text-center ">
-                                                                <h1 class="fw-semibold color-about-text">678 +</h1>
-                                                                <p class="fw-semibold">Tour Completed</p>
-                                                            </div>
-                                                        </div>
-                                                    </div> -->
                 </div>
             </div>
-            </div>
-        </section><!-- End Abou Us Section -->
-
-
-    </main><!-- End #main -->
+        </section> --}}
+    </main>
 @endsection

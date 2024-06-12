@@ -1,12 +1,12 @@
 @extends('front.layouts.main')
-{{-- @section('title', $reach->title)
+@section('title', $reach->title)
 @section('meta_title', $reach->meta_title)
 @section('meta_description', $reach->meta_description)
-@section('links', 'https://kazirangabooking.com/how-to-reach-kaziranga') --}}
+{{-- @section('links', 'https://kazirangabooking.com/how-to-reach-kaziranga') --}}
 @section('content')
     <main id="main">
-
-        <section class="contact terms">
+        {!! $reach->section_1 !!}
+        {{-- <section class="contact terms">
             <div class="container">
                 <div class="section-title">
                     <h2>How To Reach</h2>
@@ -27,7 +27,6 @@
                         <p class="fw-semibold fs-5 fst-italic mt-3" style="color:#654321"> Let’s see the detailed
                             information to reach Jawai Leopard Park.</p>
                     </div>
-
                 </div>
             </div>
             <!-- ======= Departments Section ======= -->
@@ -70,7 +69,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/attractions/By Flight .jpg') }}" alt=""
+                                        <img src="front/assets/img/attractions/By Flight .jpg" alt=""
                                             class="img-fluid" />
                                     </div>
                                 </div>
@@ -95,7 +94,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/attractions/by Train.jpg') }}" alt=""
+                                        <img src="front/assets/img/attractions/by Train.jpg" alt=""
                                             class="img-fluid" />
                                     </div>
                                 </div>
@@ -117,7 +116,7 @@
                                         Kumbhalgarh to Jawai: 90 km
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/attractions/By Road .jpg') }}" alt=""
+                                        <img src="front/assets/img/attractions/By Road .jpg" alt=""
                                             class="img-fluid" />
                                     </div>
                                 </div>
@@ -142,8 +141,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/departments-4.jpg') }}" alt=""
-                                            class="img-fluid" />
+                                        <img src="front/assets/img/departments-4.jpg" alt="" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -165,8 +163,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/departments-5.jpg') }}" alt=""
-                                            class="img-fluid" />
+                                        <img src="front/assets/img/departments-5.jpg" alt="" class="img-fluid" />
                                     </div>
                                 </div>
                             </div>
@@ -174,17 +171,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End Departments Section -->
-        </div>
-
-        </div>
-
-        </div>
-        </div>
-        </div>
-
-        </section>
-
+        </section> --}}
     </main><!-- End #main -->
 @endsection

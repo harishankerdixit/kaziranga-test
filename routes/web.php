@@ -65,9 +65,9 @@ Route::get('payment-success', [BookingController::class, 'paymentSuccess'])->nam
 
 
 //show all hotels
-Route::get('hotel', [HotalResortController::class, 'index'])->name('hotel');
+Route::get('hotels', [HotalResortController::class, 'index'])->name('hotels');
 //show particular hotel details
-Route::get('hotel-detail', [HotalResortController::class, 'hotelDetails'])->name('hotel-details');
+Route::get('Kaziranga-hotels-booking/{slug}', [HotalResortController::class, 'hotelDetails'])->name('hotel-details');
 //show hotel Booking Overview
 Route::get('/hotel-room-booking-payment/{roomid}/{hotelid}/{mealType}', [HotalResortController::class, 'hotelRoomBooking'])->name('hotel.room.booking.payment');
 //Save hotel Booking payment details
@@ -105,7 +105,7 @@ Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('news', [NewsController::class, 'index'])->name('news');
 
 //Footer third columns pages
-Route::get('kaziranga-attractions', [AttractionController::class, 'index'])->name('attractions');
+Route::get('things-to-do', [AttractionController::class, 'index'])->name('attractions');
 Route::get('local-shopping', [LocalshoppingController::class, 'index'])->name('localshopping');
 Route::get('waterfalls', [WaterfallController::class, 'index'])->name('waterfalls');
 Route::get('booking-process', [BookingprocessController::class, 'index'])->name('bookingprocess');
@@ -113,5 +113,3 @@ Route::get('local-food', [LocalFoodController::class, 'index'])->name('localfood
 
 
 Route::get('pricing', [PricingController::class, 'index'])->name('pricingtable');
-
-// ======route/jawai-national-park=====

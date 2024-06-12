@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicons -->
-    <link href="{{ asset('front/assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('front/assets/img/favicon.jpg') }}" rel="icon">
     <link href="{{ asset('front/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <link rel="canonical" href="@yield('links')" />
@@ -161,6 +161,8 @@
     @stack('scripts')
     <script>
         $(document).ready(function() {
+            $('.alert').delay(3000).slideUp();
+            
             $("#mobile_no").keyup(function(event) {
                 if ($(this).val().length == 10 && $('#name').val() != '') {
                     var type = $('#type').val() || '';

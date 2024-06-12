@@ -772,6 +772,7 @@ class HotelsManagementController extends Controller
     //store amenities
     public function amenitiesStore(Request $request)
     {
+        // dd($request->all());
         $validatedData = $request->validate([
             'amenity' => 'required',
             'status' => 'required',

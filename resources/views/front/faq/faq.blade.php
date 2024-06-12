@@ -1,14 +1,12 @@
 @extends('front.layouts.main')
-{{-- @section('title', $faq->title)
+@section('title', $faq->title)
 @section('meta_title', $faq->meta_title)
 @section('meta_description', $faq->meta_description)
-@section('links', 'https://kazirangabooking.com/faq') --}}
+{{-- @section('links', 'https://kazirangabooking.com/faq') --}}
 @section('content')
     <main id="main">
-
-
-        <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq">
+        {!! $faq->section_1 !!}
+        {{-- <section id="faq" class="faq">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Frequently Asked Questions</h2>
@@ -36,7 +34,7 @@
 
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -53,7 +51,7 @@
                                         leopards and other animal sightings are better.
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -72,7 +70,7 @@
                                         humans.
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -90,7 +88,7 @@
 
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -109,7 +107,7 @@
 
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -128,7 +126,7 @@
 
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -146,7 +144,7 @@
                                         spotted during safaris. Apart from them, crocodiles can be seen in the Jawai River.
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -163,7 +161,7 @@
                                         a safari. However, only 180 safaris are allowed in this area.
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -180,7 +178,7 @@
                                         can change according to season.
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
 
                             <div class="accordion-item">
                                 <h3 class="accordion-header">
@@ -196,15 +194,11 @@
                                         Rajasthan.
                                     </div>
                                 </div>
-                            </div><!-- # Faq item-->
+                            </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-        </section><!-- End Frequently Asked Questions Section -->
-
-
-    </main><!-- End #main -->
+        </section> --}}
+    </main>
 @endsection

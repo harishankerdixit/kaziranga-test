@@ -1,9 +1,24 @@
 @extends('front.layouts.main')
-{{-- @section('title', $homepage->title)
+@section('title', $homepage->title)
 @section('meta_title', $homepage->meta_title)
 @section('meta_description', $homepage->meta_description)
-@section('links', 'https://kazirangabooking.com/') --}}
+{{-- @section('links', 'https://kazirangabooking.com/') --}}
 @section('content')
+    <style>
+        marquee {
+            position: fixed;
+            top: 113px;
+            z-index: 1;
+            color: white;
+            line-height: 0px;
+            background-color: rgb(144, 37, 2);
+        }
+
+        marquee>p {
+            margin-top:
+                10px;
+        }
+    </style>
     <section id="hero" class="d-flex align-items-center justify-content-center">
         <video autoplay loop muted playsinline>
             <source src="{{ asset('front/assets/img/gallery/homepage2.mp4') }}">
@@ -15,8 +30,13 @@
         </div>
     </section>
     <main id="main">
+        <marquee>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, aliquid quo pariatur veritatis in ullam quia
+                et aliquam quis. Voluptatibus.</p>
+        </marquee>
         <!-- ======= Why Us Section ======= -->
-        <section id="why-us" class="why-us">
+        {!! $homepage->section_1 !!}
+        {{-- <section id="why-us" class="why-us">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 d-flex align-items-stretch">
@@ -32,7 +52,7 @@
                                 excitement to your safari.
                             </p>
                             <div class="text-center">
-                                <a href="./safari.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                                <a href="/safari" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -77,11 +97,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- End Why Us Section -->
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        {!! $homepage->section_2 !!}
+        {{-- <section id="about" class="about">
             <div class="container-fluid">
                 <div class="row">
                     <div
@@ -136,11 +157,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- End About Section -->
 
         <!-- ======= Counts Section ======= -->
-        <section id="counts" class="counts">
+        {!! $homepage->section_3 !!}
+        {{-- <section id="counts" class="counts">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -181,10 +203,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- End Counts Section -->
 
-        <section class="area_jawai">
+        {!! $homepage->section_4 !!}
+        {{-- <section class="area_jawai">
             <div class="container">
                 <div class="section-title">
                     <h2>Area of Jawai</h2>
@@ -211,9 +234,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section>
+        {!! $homepage->section_5 !!}
+        {{-- <section>
             <div class="container">
                 <div class="section-title">
                     <h2>Best time to visit</h2>
@@ -226,10 +250,11 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <!-- ======= Services Section ======= -->
-        <section id="services" class="services">
+        {!! $homepage->section_6 !!}
+        {{-- <section id="services" class="services">
             <div class="container">
                 <div class="section-title">
                     <h2>Attractions in Jawai</h2>
@@ -239,7 +264,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-place-of-worship"></i></div>
-                            <h4><a href="">Dev Giri Temple </a></h4>
+                            <h4><a href="#">Dev Giri Temple </a></h4>
                             <p>
                                 The Devgiri Temple is a famous Hindu temple located in Jamai,
                                 India. It's a place where people go to worship and pray to
@@ -259,7 +284,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-place-of-worship"></i></div>
-                            <h4><a href="">Kambeshwar Mahadev Temple</a></h4>
+                            <h4><a href="#">Kambeshwar Mahadev Temple</a></h4>
                             <p>
                                 This Hindu temple is located in the Sheoganj area of Sumerpur
                                 Tehsil. This temple is located between hills and is only 11 km
@@ -276,7 +301,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-landmark"></i></div>
-                            <h4><a href="">Abhinav Mahavir Dham</a></h4>
+                            <h4><a href="#">Abhinav Mahavir Dham</a></h4>
                             <p>
                                 Abhinav Mahavir Dham is a captivating shrine that is in the
                                 city of Sumerpur between beautiful hills. This place was built
@@ -293,7 +318,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-paw"></i></div>
-                            <h4><a href="">Leopard Safari In Jawai</a></h4>
+                            <h4><a href="#">Leopard Safari In Jawai</a></h4>
                             <p>
                                 You can enjoy a leopard safari in Jawai National Park of
                                 Rajasthan. The park has a rocky landscape and you can spot
@@ -309,7 +334,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-water"></i></div>
-                            <h4><a href="">Visit to Jawai Dam</a></h4>
+                            <h4><a href="#">Visit to Jawai Dam</a></h4>
                             <p>
                                 The region gets its name from the Jawai Dam, which was built
                                 on the Jawai River, a small river that joins the Luni River.
@@ -323,11 +348,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- End Services Section -->
 
         <!-- ======= Departments Section ======= -->
-        <section id="departments" class="departments">
+        {!! $homepage->section_7 !!}
+        {{-- <section id="departments" class="departments">
             <div class="container">
                 <div class="section-title">
                     <h2>How to Reach</h2>
@@ -379,7 +405,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/attractions/By Flight .jpg') }}"
+                                        <img src="front/assets/img/attractions/By Flight .jpg"
                                             alt="" class="img-fluid" />
                                     </div>
                                 </div>
@@ -404,7 +430,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/attractions/by Train.jpg') }}" alt=""
+                                        <img src="front/assets/img/attractions/by Train.jpg" alt=""
                                             class="img-fluid" />
                                     </div>
                                 </div>
@@ -426,7 +452,7 @@
                                         Kumbhalgarh to Jawai: 90 km
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/attractions/By Road .jpg') }}" alt=""
+                                        <img src="front/assets/img/attractions/By Road .jpg" alt=""
                                             class="img-fluid" />
                                     </div>
                                 </div>
@@ -451,7 +477,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/departments-4.jpg') }}" alt=""
+                                        <img src="front/assets/img/departments-4.jpg" alt=""
                                             class="img-fluid" />
                                     </div>
                                 </div>
@@ -474,7 +500,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="{{ asset('front/assets/img/departments-5.jpg') }}" alt=""
+                                        <img src="front/assets/img/departments-5.jpg" alt=""
                                             class="img-fluid" />
                                     </div>
                                 </div>
@@ -483,7 +509,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- End Departments Section -->
 
         <section>
@@ -590,7 +616,8 @@
             </div>
         </section>
         <!-- ======= Gallery Section ======= -->
-        <section id="gallery" class="gallery">
+        {!! $homepage->section_8 !!}
+        {{-- <section id="gallery" class="gallery">
             <div class="container">
 
                 <div class="section-title">
@@ -604,8 +631,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-1.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-1.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-1.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -613,8 +640,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-2.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-2.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-2.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -622,8 +649,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-3.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-3.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-3.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -631,8 +658,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-4.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-4.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-4.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -640,8 +667,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-5.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-5.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-5.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -649,8 +676,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-6.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-6.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-6.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -658,8 +685,8 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-7.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-7.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-7.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
@@ -667,18 +694,15 @@
 
                     <div class="col-lg-3 col-md-4">
                         <div class="gallery-item">
-                            <a href="{{ asset('front/assets/img/gallery/gallery-8.jpg') }}" class="galelry-lightbox">
-                                <img src="{{ asset('front/assets/img/gallery/gallery-8.jpg') }}" alt=""
+                            <a href="front/assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
+                                <img src="front/assets/img/gallery/gallery-8.jpg" alt=""
                                     class="img-fluid">
                             </a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-        </section><!-- End Gallery Section -->
-
-
+        </section> --}}
+        <!-- End Gallery Section -->
     </main>
 @endsection

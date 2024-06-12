@@ -10,7 +10,7 @@ class PrivacyController extends Controller
 {
     public function index()
     {
-        // $privacy = PageManagement::where('type', 'privacy')->first();
-        return view('front.privacy.privacy');
+        $privacy = PageManagement::where('type', 'privacy')->first();
+        return view('front.privacy.privacy',compact('privacy'));
     }
 }
