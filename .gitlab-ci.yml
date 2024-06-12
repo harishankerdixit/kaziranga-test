@@ -53,12 +53,12 @@ test:
 deploy:
   stage: deploy
   script:
-    - 'which ssh-agent || (apt-get update -y && apt-get install openssh-client -y)'
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
-    - ssh -T -i "$SSH_PRIVATE_KEY" ubuntu@65.1.86.94  # Test SSH connection
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
     - dep deploy 2>/dev/null || true  # Suppress stderr output or errors
   tags:
     - jawai
