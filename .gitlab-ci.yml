@@ -1,0 +1,69 @@
+image: harimohanjsi/web-chat-app:latest
+
+services:
+  - mysql:8.0
+
+variables:
+  MYSQL_DATABASE: "pench"
+  MYSQL_ROOT_PASSWORD: "pench@123"
+  DB_HOST: "65.1.86.94"
+  DB_USERNAME: "jawai"
+
+before_script:
+  - php -v
+  - apt-get update && apt-get install -y software-properties-common zip unzip sshpass # Install necessary packages
+
+stages:
+  - unit_test
+  - test
+  - deploy
+
+sonarqube-check:
+  stage: unit_test
+  image: 
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [""]
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  
+    GIT_DEPTH: "0" 
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script: 
+    - sonar-scanner
+  allow_failure: true
+  only:
+    - production 
+  
+test:
+  stage: test
+  script:
+    - cp .env.example .env
+    - composer install
+    - php artisan key:generate
+    - php artisan optimize:clear
+    #- php artisan migrate:fresh --seed 
+    #- vendor/bin/phpunit
+  tags:
+    - jawai
+
+deploy:
+  stage: deploy
+  script:
+    - 'which ssh-agent || (apt-get update -y && apt-get install openssh-client -y)'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    #- ~/.composer/vendor/bin/dep deploy production 
+    - dep deploy
+  tags:
+    - jawai 
+
+  environment:
+    name: production
+    url: http://65.1.86.94
+  only:
+    - master
+
