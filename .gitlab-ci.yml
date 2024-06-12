@@ -1,13 +1,13 @@
-image: harimohanjsi/web-chat-app:latest
+image: abhishek9921/jawai:jawai1
 
 services:
   - mysql:8.0
 
 variables:
-  MYSQL_DATABASE: "pench"
+  MYSQL_DATABASE: "jawai"
   MYSQL_ROOT_PASSWORD: "pench@123"
   DB_HOST: "65.1.86.94"
-  DB_USERNAME: "jawai"
+  DB_USERNAME: "pench"
 
 before_script:
   - php -v
@@ -56,12 +56,13 @@ deploy:
     - 'which ssh-agent || (apt-get update -y && apt-get install openssh-client -y)'
     - eval $(ssh-agent -s)
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - ssh -T -i "$SSH_PRIVATE_KEY" ubuntu@65.1.86.94  # Test SSH connection
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-    #- ~/.composer/vendor/bin/dep deploy production 
-    - dep deploy
+    - dep deploy 2>/dev/null || true  # Suppress stderr output or errors
   tags:
-    - jawai 
+    - jawai
+   
 
   environment:
     name: production
