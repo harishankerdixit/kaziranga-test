@@ -1,4 +1,4 @@
-image: abhishek9921/jawai:jawai
+image: harimohanjsi/web-chat-app:latest
 
 services:
   - mysql:8.0
