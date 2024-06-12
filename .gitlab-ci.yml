@@ -58,8 +58,9 @@ deploy:
     - ssh-add <(echo "$SSH_PRIVATE_KEY")
     - mkdir -p ~/.ssh
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - ~/.composer/vendor/bin/dep deploy production
 
-    - dep deploy 2>/dev/null || true  # Suppress stderr output or errors
+#    - dep deploy 2>/dev/null || true  # Suppress stderr output or errors
   tags:
     - jawai
    
