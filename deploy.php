@@ -29,7 +29,7 @@ task('deploy', [
     'npm:install',
     'npm:run:prod',
     'npm:run:build:css',
-    'deploy:publish',
+   # 'deploy:publish',
 ]);
 
 task('npm:install', function () {
