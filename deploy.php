@@ -6,9 +6,9 @@ require 'recipe/laravel.php';
 // Config
 set('repository', 'git@gitlab.junglesafariindia.in:abhishek.sinha/jawai.git');
 
-add('shared_files', ['.env','public/.htaccess','public/blog/.htaccess','public/blog/wp-config.php','public/sitemap.xml','public/robots.txt']);
-add('shared_dirs', ['storage','public/blog/wp-content/plugins','public/blog/wp-content/uploads']);
-add('writable_dirs', ['storage','public/blog/wp-content/plugins','public/blog/wp-content/uploads']);
+add('shared_files', []);
+add('shared_dirs', []);
+add('writable_dirs', []);
 
 
 host('production')
